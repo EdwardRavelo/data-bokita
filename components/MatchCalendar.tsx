@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useSyncExternalStore } from "react";
+import { logoSrc } from "@/lib/format";
 import { dayKey, monthGrid, monthLabel } from "@/lib/calendar";
 import type { MatchStatus, Result } from "@/lib/domain/types";
 
@@ -54,7 +55,7 @@ function RivalLogo({ rival, size }: { rival: CalendarMatch["rival"]; size: numbe
       </span>
     );
   }
-  return <Image src={rival.logo} alt={rival.name} width={size} height={size} className="object-contain" />;
+  return <Image src={logoSrc(rival.logo, size)} alt={rival.name} width={size} height={size} className="object-contain" />;
 }
 
 function DayMatch({ m }: { m: CalendarMatch }) {
@@ -64,7 +65,7 @@ function DayMatch({ m }: { m: CalendarMatch }) {
   }`;
   return (
     <Link
-      href={`/partidos/${m.id}`}
+      href={`/partido/${m.id}`}
       title={title}
       className={`group mt-1 flex flex-1 flex-col items-center justify-center gap-0.5 rounded-md border p-1 transition hover:scale-105 hover:shadow-lg hover:shadow-gold-500/10 ${style.cell}`}
     >

@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "verify": "tsx scripts/verify.ts"
+    "verify": "tsx scripts/verify.ts",
+    "archive": "tsx scripts/archive.ts"
   },
   "dependencies": {
     "fast-xml-parser": "^5.11.2",

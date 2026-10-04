@@ -1,7 +1,23 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Card, Notice, ResultBadge, Section, SourceBadge, SourceError, TeamLogo } from "@/components/ui";
-import { currentYear, getCurrentSeason } from "@/lib/data";
+import { notFound } from "next/navigation";
+import {
+  ArchiveOnlyNotice,
+  Card,
+  Notice,
+  ResultBadge,
+  SeasonPicker,
+  Section,
+  SourceBadge,
+} from "@/components/ui";
+import {
+  availableYears,
+  defaultStatsYear,
+  getDetail,
+  getSeason,
+  seasonStaticParams,
+  yearParam,
+} from "@/lib/data";
 import { sides } from "@/lib/domain/match";
 import {
   averageStat,
@@ -12,12 +28,12 @@ import {
   summarizeSeason,
   type TeamRecord,
 } from "@/lib/domain/season";
-import { BOCA_ID, type MatchDetail } from "@/lib/domain/types";
+import type { MatchDetail } from "@/lib/domain/types";
 import { formatDate } from "@/lib/format";
-import { getMatchDetail, getStandings } from "@/lib/sources/espn";
 
 export const metadata: Metadata = { title: "Estadísticas" };
 export const revalidate = 600;
+export const generateStaticParams = seasonStaticParams;
 
 function Big({ value, label }: { value: string | number; label: string }) {
   return (
@@ -65,21 +81,22 @@ function RecordTable({ rows }: { rows: { name: string; record: TeamRecord }[] })
   );
 }
 
-export default async function EstadisticasPage() {
-  const [season, standings] = await Promise.all([getCurrentSeason(), getStandings()]);
-  if (!season.ok) {
-    return (
-      <Section title="Estadísticas">
-        <SourceError data={season} />
-      </Section>
-    );
-  }
+export default async function EstadisticasPage(props: PageProps<"/estadisticas/[[...temporada]]">) {
+  const { temporada } = await props.params;
+  const param = yearParam(temporada);
+  if (param === "invalid") notFound();
+  const defaultYear = await defaultStatsYear();
+  const year = param ?? defaultYear;
+  const season = await getSeason(year);
+  if (!season) notFound();
 
-  const official = season.data.filter((m) => m.competition.slug !== "club.friendly");
+  const official = season.matches.filter((m) => m.competition.slug !== "club.friendly");
   const summary = summarizeSeason(official);
 
   // Detalle de cada partido oficial jugado (cacheado un día por partido).
-  const results = await Promise.all(finishedMatches(official).map(({ match }) => getMatchDetail(match)));
+  const results = await Promise.all(
+    finishedMatches(official).map(({ match }) => getDetail(match, year)),
+  );
   const details = new Map<string, MatchDetail>();
   for (const r of results) if (r.ok) details.set(r.data.match.id, r.data);
   const detailList = [...details.values()];
@@ -96,14 +113,22 @@ export default async function EstadisticasPage() {
     ] as const
   ).map(([key, label, unit]) => ({ label, unit, avg: averageStat(detailList, key) }));
 
-  const group = standings.ok
-    ? standings.data.find((g) => g.rows.some((r) => r.team.id === BOCA_ID))
-    : undefined;
   const t = summary.total;
 
   return (
     <>
-      <h1 className="mb-1 font-display text-3xl font-bold uppercase">Temporada {currentYear()}</h1>
+      <h1 className="mb-4 font-display text-3xl font-bold uppercase">Temporada {year}</h1>
+      <SeasonPicker
+        years={await availableYears()}
+        selected={year}
+        defaultYear={defaultYear}
+        base="/estadisticas"
+      />
+      {season.archiveOnly && (
+        <div className="mb-4">
+          <ArchiveOnlyNotice />
+        </div>
+      )}
       <p className="mb-6 text-sm text-slate-400">
         Partidos oficiales finalizados (sin amistosos). Una definición por penales cuenta como
         empate.
@@ -122,7 +147,7 @@ export default async function EstadisticasPage() {
           <span className="flex items-center gap-1">
             <span className="mr-1 text-slate-400">Últimos 5:</span>
             {summary.form.map(({ match, result }) => (
-              <Link key={match.id} href={`/partidos/${match.id}`}>
+              <Link key={match.id} href={`/partido/${match.id}`}>
                 <ResultBadge result={result} />
               </Link>
             ))}
@@ -133,7 +158,7 @@ export default async function EstadisticasPage() {
           {summary.biggestWin && (
             <span>
               <span className="text-slate-400">Mayor goleada:</span>{" "}
-              <Link href={`/partidos/${summary.biggestWin.id}`} className="hover:text-gold-400">
+              <Link href={`/partido/${summary.biggestWin.id}`} className="hover:text-gold-400">
                 {sides(summary.biggestWin).boca.score}-{sides(summary.biggestWin).rival.score} vs{" "}
                 {sides(summary.biggestWin).rival.team.name} ({formatDate(summary.biggestWin.date)})
               </Link>
@@ -189,7 +214,7 @@ export default async function EstadisticasPage() {
               {scorers.incompleteMatches.map((m, i) => (
                 <span key={m.id}>
                   {i > 0 && ", "}
-                  <Link href={`/partidos/${m.id}`} className="underline">
+                  <Link href={`/partido/${m.id}`} className="underline">
                     {sides(m).rival.team.name} ({formatDate(m.date)})
                   </Link>
                 </span>
@@ -221,53 +246,12 @@ export default async function EstadisticasPage() {
         </div>
       </Section>
 
-      <Section title="Tabla Liga Profesional">
-        {!standings.ok ? (
-          <SourceError data={standings} />
-        ) : !group ? (
-          <p className="text-sm text-slate-400">Sin datos.</p>
-        ) : (
-          <>
-            <p className="mb-2 text-sm text-slate-400">{group.name}</p>
-            <div className="overflow-x-auto rounded-lg border border-navy-700">
-              <table className="w-full text-sm">
-                <thead className="bg-navy-800 text-xs uppercase text-slate-400">
-                  <tr>
-                    <th className="px-2 py-2 text-right font-medium">#</th>
-                    <th className="px-2 py-2 text-left font-medium">Equipo</th>
-                    {["PJ", "G", "E", "P", "DIF", "PTS"].map((h) => (
-                      <th key={h} className="px-2 py-2 text-right font-medium">
-                        {h}
-                      </th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-navy-700 bg-navy-900 tabular-nums">
-                  {group.rows.map((r) => (
-                    <tr key={r.team.id} className={r.team.id === BOCA_ID ? "bg-gold-500/15 font-semibold" : ""}>
-                      <td className="px-2 py-1.5 text-right">{r.rank}</td>
-                      <td className="px-2 py-1.5">
-                        <span className="flex items-center gap-2">
-                          <TeamLogo team={r.team} size={18} />
-                          {r.team.shortName}
-                        </span>
-                      </td>
-                      <td className="px-2 py-1.5 text-right">{r.played}</td>
-                      <td className="px-2 py-1.5 text-right">{r.won}</td>
-                      <td className="px-2 py-1.5 text-right">{r.drawn}</td>
-                      <td className="px-2 py-1.5 text-right">{r.lost}</td>
-                      <td className="px-2 py-1.5 text-right">{r.goalsFor - r.goalsAgainst}</td>
-                      <td className="px-2 py-1.5 text-right">{r.points}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <SourceBadge data={standings} />
-          </>
-        )}
-      </Section>
-      <SourceBadge data={season} />
+      <p className="mb-2 text-sm">
+        <Link href={year === defaultYear ? "/tablas" : `/tablas/${year}`} className="text-gold-400 hover:underline">
+          Ver tablas de posiciones y llaves de todos los torneos →
+        </Link>
+      </p>
+      <SourceBadge data={{ source: season.source, fetchedAt: season.updatedAt }} />
     </>
   );
 }

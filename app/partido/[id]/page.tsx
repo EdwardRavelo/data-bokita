@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { KickoffLabel, MatchMeta } from "@/components/MatchCard";
-import { Card, Notice, Section, SourceBadge, SourceError, TeamLogo } from "@/components/ui";
-import { getCurrentSeason } from "@/lib/data";
+import { Card, Notice, Section, SourceBadge, TeamLogo } from "@/components/ui";
+import { SourceUnavailableError, findMatch, getDetail } from "@/lib/data";
 import { shootoutWinner } from "@/lib/domain/match";
 import { BOCA_ID, type Lineup, type Match, type MatchDetail, type MatchEvent, type Team, type TeamStat } from "@/lib/domain/types";
 import { STATUS_LABEL, formatLongDate, formatTime } from "@/lib/format";
-import { getMatchDetail, isGoal } from "@/lib/sources/espn";
+import { isGoal } from "@/lib/sources/espn";
 
-async function findMatch(id: string) {
-  const season = await getCurrentSeason();
-  return { season, match: season.ok ? season.data.find((m) => m.id === id) : undefined };
+export const revalidate = 60;
+// Sin páginas previas: cada ficha se genera al primer pedido y queda en caché (ISR).
+export function generateStaticParams() {
+  return [];
 }
 
-export async function generateMetadata(props: PageProps<"/partidos/[id]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/partido/[id]">): Promise<Metadata> {
   const { id } = await props.params;
-  const { match } = await findMatch(id);
-  return { title: match ? `${match.home.team.name} vs ${match.away.team.name}` : "Partido" };
+  const found = await findMatch(id);
+  return {
+    title: found ? `${found.match.home.team.name} vs ${found.match.away.team.name}` : "Partido",
+  };
 }
 
 const EVENT_ICON: Record<MatchEvent["type"], string> = {
@@ -191,14 +194,15 @@ function LineupCard({ lineup, team }: { lineup: Lineup; team: Team }) {
   );
 }
 
-export default async function MatchPage(props: PageProps<"/partidos/[id]">) {
+export default async function MatchPage(props: PageProps<"/partido/[id]">) {
   const { id } = await props.params;
-  const { season, match } = await findMatch(id);
-  if (!season.ok) return <SourceError data={season} />;
-  if (!match) notFound();
+  if (!/^\d+$/.test(id)) notFound();
+  const found = await findMatch(id);
+  if (!found) notFound();
 
-  const detail = await getMatchDetail(match);
-  if (!detail.ok) return <SourceError data={detail} />;
+  const detail = await getDetail(found.match, found.year);
+  // Sin datos nuevos: se lanza para que se siga mostrando la última versión buena.
+  if (!detail.ok) throw new SourceUnavailableError(detail.error);
   const d = detail.data;
   const played = d.match.status === "finished" || d.match.status === "live";
   const teamOf = (teamId: string) => (teamId === d.match.home.team.id ? d.match.home.team : d.match.away.team);

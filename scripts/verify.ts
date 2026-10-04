@@ -7,7 +7,7 @@ import { resultFor, sides } from "../lib/domain/match";
 import { summarizeSeason } from "../lib/domain/season";
 import { BOCA_ID } from "../lib/domain/types";
 import { formatDateTime } from "../lib/format";
-import { getSeasonMatches, getStandings } from "../lib/sources/espn";
+import { fetchJson, getSeasonMatches, parseStandings } from "../lib/sources/espn";
 import { currentYear } from "../lib/data";
 
 async function main() {
@@ -26,9 +26,10 @@ async function main() {
   const next = season.data.find((m) => m.status === "scheduled");
   if (next) console.log(`\nPróximo: ${formatDateTime(next.date)} ${next.home.team.name} vs ${next.away.team.name}`);
 
-  const standings = await getStandings();
-  if (!standings.ok) throw new Error(standings.error);
-  const row = standings.data.flatMap((g) => g.rows).find((r) => r.team.id === BOCA_ID);
+  const standings = parseStandings(
+    await fetchJson("https://site.api.espn.com/apis/v2/sports/soccer/arg.1/standings", 0),
+  );
+  const row = standings.flatMap((g) => g.rows).find((r) => r.team.id === BOCA_ID);
   const lastLeague = season.data.findLast((m) => m.competition.slug === "arg.1" && m.status === "finished");
   if (!row || !lastLeague) {
     console.log("\nNo se encontró a Boca en la tabla.");

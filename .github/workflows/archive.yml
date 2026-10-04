@@ -1,0 +1,59 @@
+# Actualiza a diario el archivo de partidos (data/archive) con los datos de ESPN.
+# Si hay cambios, los commitea: eso además dispara una nueva publicación en Vercel.
+name: Archivar partidos
+
+on:
+  schedule:
+    - cron: "0 9 * * *" # 06:00 hora argentina
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "Años a archivar separados por espacio (vacío = año en curso)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: archive
+  cancel-in-progress: false
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Archivar
+        env:
+          YEARS: ${{ github.event.inputs.years }}
+        run: |
+          # Solo se aceptan años de 4 dígitos.
+          if [ -n "$YEARS" ] && ! echo "$YEARS" | grep -Eq '^[0-9]{4}( [0-9]{4})*$'; then
+            echo "Años inválidos: $YEARS"; exit 1
+          fi
+          npm run archive -- $YEARS
+
+      # No se commitea un archivo que no pase los tests.
+      - run: npm test
+
+      - name: Commitear cambios
+        run: |
+          if git diff --quiet -- data/archive; then
+            echo "Sin cambios en el archivo."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/archive
+          git commit -m "Actualizar archivo de partidos ($(date -u +%Y-%m-%d))"
+          git push

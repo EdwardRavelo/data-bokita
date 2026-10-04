@@ -65,7 +65,7 @@ export function MatchCard({ match }: { match: Match }) {
 
   return (
     <Link
-      href={`/partidos/${match.id}`}
+      href={`/partido/${match.id}`}
       className="block rounded-lg border border-navy-700 bg-navy-900 p-3 transition hover:border-gold-600"
     >
       <div className="mb-2 flex items-center justify-between gap-2 text-xs text-slate-400">

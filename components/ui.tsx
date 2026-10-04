@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
 import type { Result, Sourced, Team } from "@/lib/domain/types";
-import { formatDateTime } from "@/lib/format";
+import { formatDateTime, logoSrc } from "@/lib/format";
 
 export function TeamLogo({ team, size = 32 }: { team: Team; size?: number }) {
   if (!team.logo) {
@@ -17,7 +17,7 @@ export function TeamLogo({ team, size = 32 }: { team: Team; size?: number }) {
   }
   return (
     <Image
-      src={team.logo}
+      src={logoSrc(team.logo, size)}
       alt=""
       width={size}
       height={size}
@@ -100,5 +100,47 @@ export function ResultBadge({ result }: { result: Result }) {
     >
       {s.label}
     </span>
+  );
+}
+
+/** Selector de temporada: links a /{base} (año por defecto) y /{base}/{año}. */
+export function SeasonPicker({
+  years,
+  selected,
+  defaultYear,
+  base,
+}: {
+  years: number[];
+  selected: number;
+  defaultYear: number;
+  base: string;
+}) {
+  return (
+    <nav className="mb-6 flex flex-wrap items-center gap-2" aria-label="Temporada">
+      <span className="text-xs uppercase text-slate-400">Temporada</span>
+      {years.map((y) => (
+        <a
+          key={y}
+          href={y === defaultYear ? base : `${base}/${y}`}
+          aria-current={y === selected ? "page" : undefined}
+          className={`rounded-md border px-2.5 py-1 text-sm tabular-nums ${
+            y === selected
+              ? "border-gold-500 bg-gold-500 font-semibold text-navy-950"
+              : "border-navy-600 text-slate-300 hover:border-gold-500"
+          }`}
+        >
+          {y}
+        </a>
+      ))}
+    </nav>
+  );
+}
+
+export function ArchiveOnlyNotice() {
+  return (
+    <Notice>
+      No pudimos consultar ESPN en este momento: se muestran solo los partidos ya archivados.
+      Los próximos partidos pueden no estar actualizados.
+    </Notice>
   );
 }

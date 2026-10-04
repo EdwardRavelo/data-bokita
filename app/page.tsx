@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Countdown } from "@/components/Countdown";
 import { KickoffLabel, MatchCard, MatchMeta } from "@/components/MatchCard";
 import { MatchCalendar, type CalendarMatch } from "@/components/MatchCalendar";
-import { Card, Section, SourceBadge, SourceError, TeamLogo } from "@/components/ui";
+import { ArchiveOnlyNotice, Card, Section, SourceBadge, TeamLogo } from "@/components/ui";
 import { addMonths, currentMonth, dayKey, monthKey } from "@/lib/calendar";
-import { getCurrentSeason, lastFinished, nextMatch } from "@/lib/data";
+import { currentYear, getSeason, lastFinished, nextMatch } from "@/lib/data";
 import { resultFor, sides } from "@/lib/domain/match";
 import type { Match } from "@/lib/domain/types";
 import { formatTime } from "@/lib/format";
@@ -36,7 +36,7 @@ function NextMatch({ match }: { match: Match }) {
       </p>
       {match.status === "scheduled" && match.timeConfirmed && <Countdown to={match.date} />}
       <Link
-        href={`/partidos/${match.id}`}
+        href={`/partido/${match.id}`}
         className="mt-4 inline-block text-sm text-gold-400 hover:underline"
       >
         Ver ficha del partido →
@@ -70,60 +70,59 @@ function monthRange(matches: Match[], current: string): string[] {
 }
 
 export default async function Home() {
-  const season = await getCurrentSeason();
+  // El año en curso siempre existe (ESPN en vivo + archivo); si ESPN falla, getSeason lanza
+  // y Next sigue mostrando la última versión buena de la página.
+  const season = (await getSeason(currentYear()))!;
   const thisMonth = currentMonth();
-  const next = season.ok ? nextMatch(season.data) : null;
-  const last = season.ok ? lastFinished(season.data) : null;
+  const next = nextMatch(season.matches);
+  const last = lastFinished(season.matches);
+  const source = { source: season.source, fetchedAt: season.updatedAt };
 
   return (
     <>
-      {season.ok ? (
-        <>
-          <Section title={next?.status === "live" ? "En vivo" : "Próximo partido"}>
-            {next ? (
-              <NextMatch match={next} />
-            ) : (
-              <Card className="text-sm text-slate-300">
-                No hay partidos programados informados por la fuente.
-              </Card>
-            )}
-          </Section>
-          {last && (
-            <Section
-              title="Último resultado"
-              action={
-                <Link href="/partidos" className="text-sm text-gold-400 hover:underline">
-                  Todos los partidos
-                </Link>
-              }
-            >
-              <MatchCard match={last} />
-              <SourceBadge data={season} />
-            </Section>
-          )}
-        </>
-      ) : (
-        <Section title="Partidos">
-          <SourceError data={season} />
-        </Section>
+      {season.archiveOnly && (
+        <div className="mb-6">
+          <ArchiveOnlyNotice />
+        </div>
       )}
+      <Section title={next?.status === "live" ? "En vivo" : "Próximo partido"}>
+        {next ? (
+          <NextMatch match={next} />
+        ) : (
+          <Card className="text-sm text-slate-300">
+            No hay partidos programados informados por la fuente.
+          </Card>
+        )}
+      </Section>
 
-      {season.ok && (
+      {last && (
         <Section
-          title="Calendario"
+          title="Último resultado"
           action={
             <Link href="/partidos" className="text-sm text-gold-400 hover:underline">
-              Ver lista
+              Todos los partidos
             </Link>
           }
         >
-          <MatchCalendar
-            matches={season.data.map(toCalendarMatch)}
-            initialMonth={next ? monthKey(next.date) : thisMonth}
-            months={monthRange(season.data, thisMonth)}
-          />
+          <MatchCard match={last} />
         </Section>
       )}
+      <Section
+        title="Calendario"
+        action={
+          <Link href="/partidos" className="text-sm text-gold-400 hover:underline">
+            Ver lista
+          </Link>
+        }
+      >
+        <MatchCalendar
+          matches={season.matches.map(toCalendarMatch)}
+          initialMonth={next ? monthKey(next.date) : thisMonth}
+          months={monthRange(season.matches, thisMonth)}
+        />
+      </Section>
+
+      <SourceBadge data={source} />
     </>
   );
 }

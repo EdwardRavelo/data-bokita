@@ -11,6 +11,8 @@ import {
   type MatchStatus,
   type Side,
   type Sourced,
+  type StandingsGroup,
+  type StandingsTable,
   type Team,
   type TeamStat,
 } from "../domain/types";
@@ -377,7 +379,7 @@ export function parseSummary(raw: unknown, base: Match): MatchDetail {
 // Fetch
 // ---------------------------------------------------------------------------
 
-async function fetchJson(url: string, revalidate: number): Promise<unknown> {
+export async function fetchJson(url: string, revalidate: number): Promise<unknown> {
   const res = await fetch(url, {
     next: { revalidate },
     signal: AbortSignal.timeout(10_000),
@@ -426,41 +428,46 @@ export function getMatchDetail(base: Match): Promise<Sourced<MatchDetail>> {
   );
 }
 
-export type StandingRow = {
-  rank: number;
-  team: Team;
-  played: number;
-  won: number;
-  drawn: number;
-  lost: number;
-  goalsFor: number;
-  goalsAgainst: number;
-  points: number;
-};
-
-export type StandingsGroup = { name: string; rows: StandingRow[] };
-
 const standingsSchema = z.object({
-  children: z.array(
-    z.object({
-      name: z.string(),
-      standings: z.object({
-        entries: z.array(
-          z.object({
-            team: teamSchema,
-            stats: z.array(z.object({ name: z.string(), value: z.number().optional() })),
-          }),
-        ),
+  children: z
+    .array(
+      z.object({
+        name: z.string(),
+        standings: z.object({
+          entries: z.array(
+            z.object({
+              team: teamSchema,
+              stats: z.array(z.object({ name: z.string(), value: z.number().optional() })),
+            }),
+          ),
+        }),
       }),
-    }),
-  ),
+    )
+    .optional(),
+  seasons: z
+    .array(
+      z.object({
+        year: z.number(),
+        types: z
+          .array(z.object({ id: z.string(), name: z.string(), hasStandings: z.boolean().optional() }))
+          .optional(),
+      }),
+    )
+    .optional(),
 });
 
-export function parseStandings(raw: unknown): StandingsGroup[] {
+/** "Group A" → "Zona A" en la Liga, "Grupo A" en las copas. */
+function groupName(slug: string, name: string): string {
+  // Torneos de una sola tabla (ej. Liga 2024) traen el nombre del torneo como grupo.
+  if (!/^Group /.test(name)) return "Tabla general";
+  return name.replace(/^Group /, slug.startsWith("arg.") ? "Zona " : "Grupo ");
+}
+
+export function parseStandings(raw: unknown, slug = "arg.1"): StandingsGroup[] {
   const parsed = standingsSchema.safeParse(raw);
   if (!parsed.success) throw new Error("Formato de tabla inesperado");
-  return parsed.data.children.map((g) => ({
-    name: g.name.replace(/^Group /, "Zona "),
+  return (parsed.data.children ?? []).map((g) => ({
+    name: groupName(slug, g.name),
     rows: g.standings.entries
       .map((e) => {
         const stat = (name: string) => {
@@ -484,10 +491,60 @@ export function parseStandings(raw: unknown): StandingsGroup[] {
   }));
 }
 
-export function getStandings(): Promise<Sourced<StandingsGroup[]>> {
-  return sourced(async () =>
-    parseStandings(
-      await fetchJson("https://site.api.espn.com/apis/v2/sports/soccer/arg.1/standings", 600),
-    ),
-  );
+/** Fases del torneo que según la fuente tienen tabla de posiciones. */
+export function standingsTypes(raw: unknown, year: number): { id: string; name: string }[] {
+  const parsed = standingsSchema.safeParse(raw);
+  if (!parsed.success) throw new Error("Formato de tabla inesperado");
+  const season = parsed.data.seasons?.find((s) => s.year === year);
+  return (season?.types ?? []).filter((t) => t.hasStandings).map(({ id, name }) => ({ id, name }));
+}
+
+const STANDINGS_BASE = "https://site.api.espn.com/apis/v2/sports/soccer";
+
+/** Competencias que tienen tabla (las demás se juegan solo por eliminación). */
+export const LEAGUES_WITH_TABLES = [
+  "arg.1",
+  "arg.copa_lpf",
+  "conmebol.libertadores",
+  "conmebol.sudamericana",
+  "fifa.cwc",
+];
+
+/**
+ * Todas las tablas del año para una competencia en las que figura Boca
+ * (ej. Liga: Apertura y Clausura; Libertadores: fase de grupos).
+ */
+export async function fetchStandingsTables(
+  slug: string,
+  year: number,
+  revalidate = 600,
+): Promise<StandingsTable[]> {
+  const url = (type?: string) =>
+    `${STANDINGS_BASE}/${slug}/standings?season=${year}${type ? `&seasontype=${type}` : ""}`;
+  const types = standingsTypes(await fetchJson(url(), revalidate), year);
+  const tables: StandingsTable[] = [];
+  for (const t of types) {
+    const groups = parseStandings(await fetchJson(url(t.id), revalidate), slug);
+    if (!groups.some((g) => g.rows.some((r) => r.team.id === BOCA_ID))) continue;
+    tables.push({
+      slug,
+      competition: competitionName(slug, slug),
+      stage: stageName(t.name),
+      year,
+      groups,
+    });
+  }
+  return tables;
+}
+
+export function getStandingsTables(
+  slugs: string[],
+  year: number,
+): Promise<Sourced<StandingsTable[]>> {
+  return sourced(async () => {
+    const all = await Promise.all(
+      slugs.filter((s) => LEAGUES_WITH_TABLES.includes(s)).map((s) => fetchStandingsTables(s, year)),
+    );
+    return all.flat();
+  });
 }

@@ -5,6 +5,7 @@ export const TIME_ZONE = "America/Argentina/Buenos_Aires";
 const COMPETITIONS: Record<string, string> = {
   "arg.1": "Liga Profesional",
   "arg.copa": "Copa Argentina",
+  "arg.copa_lpf": "Copa de la Liga",
   "arg.supercopa": "Supercopa Argentina",
   "arg.trofeo_de_campeones": "Trofeo de Campeones",
   "conmebol.libertadores": "Copa Libertadores",
@@ -28,13 +29,20 @@ const STAGES: [RegExp, string][] = [
   [/^Finals?$/i, "Final"],
   [/^Group Stage$/i, "Fase de grupos"],
   [/^Knockout Round Playoffs$/i, "Playoffs"],
+  [/^First Stage$/i, "Primera fase"],
+  [/^Second Stage$/i, "Segunda fase"],
+  [/^Third Stage$/i, "Tercera fase"],
+  [/^Qualifying Play-In$/i, "Repechaje"],
   [/^Torneo (Apertura|Clausura)$/i, "Torneo $1"],
 ];
 
 /** Traduce la instancia; devuelve null cuando no aporta información (ej. "2026 Club Friendly"). */
 export function stageName(source: string | null | undefined): string | null {
   if (!source) return null;
+  source = source.trim();
   if (/friendly/i.test(source)) return null;
+  // "2024 Argentine Liga Profesional": torneo anual de una sola fase, sin instancia.
+  if (/^\d{4} /.test(source)) return null;
   // "Apertura - Round of 16" → "Apertura - Octavos de final"
   return source
     .split(" - ")
@@ -82,3 +90,14 @@ export const STATUS_LABEL: Record<MatchStatus, string> = {
   suspended: "Suspendido",
   canceled: "Cancelado",
 };
+
+/**
+ * Escudo achicado por el propio CDN de ESPN (ej. 4 KB en vez de 120 KB), así no se
+ * usa la optimización de imágenes de Vercel, que en el plan gratis tiene cupo mensual.
+ */
+export function logoSrc(url: string, px: number): string {
+  const m = /^https:\/\/a\.espncdn\.com(\/i\/teamlogos\/.+\.png)$/.exec(url);
+  if (!m) return url;
+  const size = px * 2; // pantallas de alta densidad
+  return `https://a.espncdn.com/combiner/i?img=${m[1]}&w=${size}&h=${size}`;
+}

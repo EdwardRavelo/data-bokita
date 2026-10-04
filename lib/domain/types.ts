@@ -116,3 +116,26 @@ export type NewsItem = {
 export type Sourced<T> =
   | { ok: true; data: T; source: string; fetchedAt: string }
   | { ok: false; error: string; source: string; fetchedAt: string };
+
+export type StandingRow = {
+  rank: number;
+  team: Team;
+  played: number;
+  won: number;
+  drawn: number;
+  lost: number;
+  goalsFor: number;
+  goalsAgainst: number;
+  points: number;
+};
+
+export type StandingsGroup = { name: string; rows: StandingRow[] };
+
+/** Una tabla de un torneo/fase (ej. Liga Profesional · Torneo Apertura). */
+export type StandingsTable = {
+  slug: string;
+  competition: string;
+  stage: string | null;
+  year: number;
+  groups: StandingsGroup[];
+};
