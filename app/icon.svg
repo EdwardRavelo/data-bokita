@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="escudo">
+      <path d="M32 4 56 10v20c0 16-11 26-24 30C19 56 8 46 8 30V10z"/>
+    </clipPath>
+  </defs>
+  <path d="M32 4 56 10v20c0 16-11 26-24 30C19 56 8 46 8 30V10z" fill="#0a1f44"/>
+  <!-- Franja dorada de la camiseta -->
+  <rect x="0" y="24" width="64" height="14" fill="#f3b229" clip-path="url(#escudo)"/>
+  <path d="M32 4 56 10v20c0 16-11 26-24 30C19 56 8 46 8 30V10z" fill="none" stroke="#f3b229" stroke-width="3.5" stroke-linejoin="round"/>
+</svg>

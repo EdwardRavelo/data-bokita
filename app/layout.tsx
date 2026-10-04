@@ -45,10 +45,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <p>
             Datos de partidos: ESPN. Noticias: sitio oficial bocajuniors.com.ar (vía Google News).
           </p>
-          <p className="mt-1">
-            Sitio no oficial de hinchas. Horarios en hora de Argentina. Si un dato no está en la
-            fuente, se indica &quot;Sin datos&quot; en lugar de estimarlo.
-          </p>
         </footer>
       </body>
     </html>
