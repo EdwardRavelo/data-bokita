@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-04T22:08:05.949Z",
+  "generatedAt": "2026-10-05T17:54:57.310Z",
   "source": "ESPN",
   "matches": [
     {
@@ -6689,7 +6689,7 @@
           "minute": "45'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moya",
+          "player": "Santiago Moyano",
           "secondary": "Lucas González"
         },
         {
@@ -6770,7 +6770,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Lucas Varaldo",
-          "secondary": "Matias Vera"
+          "secondary": "Matías Vera"
         },
         {
           "type": "yellowCard",
@@ -6918,7 +6918,7 @@
             },
             {
               "id": "218440",
-              "name": "Matias Vera",
+              "name": "Matías Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -7016,7 +7016,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moya",
+              "name": "Santiago Moyano",
               "jersey": "33",
               "position": "SUB",
               "subbedIn": true,
@@ -7915,7 +7915,7 @@
           "minute": "41'",
           "period": 1,
           "teamId": "20",
-          "player": "Julián Palacio",
+          "player": "Julián Palacios",
           "secondary": "Rafael Profini"
         },
         {
@@ -7939,7 +7939,7 @@
           "minute": "58'",
           "period": 2,
           "teamId": "20",
-          "player": "Julián Palacio",
+          "player": "Julián Palacios",
           "secondary": null
         },
         {
@@ -7980,7 +7980,7 @@
           "period": 2,
           "teamId": "20",
           "player": "Santiago Grella",
-          "secondary": "Julián Palacio"
+          "secondary": "Julián Palacios"
         },
         {
           "type": "substitution",
@@ -8152,7 +8152,7 @@
             },
             {
               "id": "298859",
-              "name": "Julián Palacio",
+              "name": "Julián Palacios",
               "jersey": "20",
               "position": "RM",
               "subbedIn": false,
@@ -14205,7 +14205,7 @@
           "minute": "84'",
           "period": 2,
           "teamId": "7764",
-          "player": "Pablo Thomaz",
+          "player": "Pablo Ferreira",
           "secondary": "Ivan Gomez"
         },
         {
@@ -14508,7 +14508,7 @@
             },
             {
               "id": "274441",
-              "name": "Pablo Thomaz",
+              "name": "Pablo Ferreira",
               "jersey": "26",
               "position": "SUB",
               "subbedIn": true,
@@ -16673,7 +16673,7 @@
           "minute": "62'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moya",
+          "player": "Santiago Moyano",
           "secondary": null
         },
         {
@@ -16690,7 +16690,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Martín Francisco Cuitiño",
-          "secondary": "Santiago Moya"
+          "secondary": "Santiago Moyano"
         },
         {
           "type": "substitution",
@@ -17062,7 +17062,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moya",
+              "name": "Santiago Moyano",
               "jersey": "33",
               "position": "RB",
               "subbedIn": false,
@@ -17078,7 +17078,7 @@
             },
             {
               "id": "218440",
-              "name": "Matias Vera",
+              "name": "Matías Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -17298,7 +17298,7 @@
           "minute": "55'",
           "period": 2,
           "teamId": "18",
-          "player": "Juan Álvarez",
+          "player": "Juan Ignacio Álvarez",
           "secondary": "Facundo Farías"
         },
         {
@@ -17609,7 +17609,7 @@
             },
             {
               "id": "228146",
-              "name": "Juan Álvarez",
+              "name": "Juan Ignacio Álvarez",
               "jersey": "22",
               "position": "SUB",
               "subbedIn": true,
@@ -17996,7 +17996,7 @@
           "period": 2,
           "teamId": "20",
           "player": "Eric Ramírez",
-          "secondary": "Julián Palacio"
+          "secondary": "Julián Palacios"
         },
         {
           "type": "substitution",
@@ -18392,7 +18392,7 @@
             },
             {
               "id": "298859",
-              "name": "Julián Palacio",
+              "name": "Julián Palacios",
               "jersey": "20",
               "position": "RM",
               "subbedIn": false,
@@ -27045,7 +27045,7 @@
             },
             {
               "id": "417345",
-              "name": "Claudinho",
+              "name": "Claudinho ",
               "jersey": "26",
               "position": "LM",
               "subbedIn": false,
@@ -27093,7 +27093,7 @@
             },
             {
               "id": "315283",
-              "name": "Renan",
+              "name": "Renan Peixoto",
               "jersey": "70",
               "position": "F",
               "subbedIn": false,
@@ -27127,7 +27127,7 @@
             },
             {
               "id": "361383",
-              "name": "Chiqueti",
+              "name": "Chiqueti ",
               "jersey": "47",
               "position": "SUB",
               "subbedIn": false,
@@ -27143,7 +27143,7 @@
             },
             {
               "id": "315789",
-              "name": "Filipinho",
+              "name": "Felipinho ",
               "jersey": "5",
               "position": "SUB",
               "subbedIn": false,
@@ -27167,7 +27167,7 @@
             },
             {
               "id": "382858",
-              "name": "Diogo Riquelme",
+              "name": "Diogo Riquelme ",
               "jersey": "63",
               "position": "SUB",
               "subbedIn": false,
@@ -27191,7 +27191,7 @@
             },
             {
               "id": "361393",
-              "name": "Matheus Rocha",
+              "name": "Matheus Soares",
               "jersey": "42",
               "position": "SUB",
               "subbedIn": false,
@@ -27199,7 +27199,7 @@
             },
             {
               "id": "338881",
-              "name": "Leonardo Derik",
+              "name": "Léo Derik ",
               "jersey": "6",
               "position": "SUB",
               "subbedIn": false,
@@ -27215,7 +27215,7 @@
             },
             {
               "id": "380327",
-              "name": "Leozinho",
+              "name": "Leozinho ",
               "jersey": "21",
               "position": "SUB",
               "subbedIn": false,
@@ -31738,6 +31738,23 @@
             {
               "rank": 1,
               "team": {
+                "id": "3",
+                "name": "Argentinos Juniors",
+                "shortName": "Argentinos",
+                "abbreviation": "ARGJ",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png"
+              },
+              "played": 11,
+              "won": 6,
+              "drawn": 3,
+              "lost": 2,
+              "goalsFor": 15,
+              "goalsAgainst": 10,
+              "points": 21
+            },
+            {
+              "rank": 2,
+              "team": {
                 "id": "4",
                 "name": "Belgrano (Córdoba)",
                 "shortName": "Belgrano",
@@ -31753,7 +31770,7 @@
               "points": 19
             },
             {
-              "rank": 2,
+              "rank": 3,
               "team": {
                 "id": "10",
                 "name": "Huracán",
@@ -31768,23 +31785,6 @@
               "goalsFor": 11,
               "goalsAgainst": 8,
               "points": 19
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": "3",
-                "name": "Argentinos Juniors",
-                "shortName": "Argentinos",
-                "abbreviation": "ARGJ",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png"
-              },
-              "played": 10,
-              "won": 5,
-              "drawn": 3,
-              "lost": 2,
-              "goalsFor": 13,
-              "goalsAgainst": 9,
-              "points": 18
             },
             {
               "rank": 4,
@@ -31914,16 +31914,33 @@
                 "abbreviation": "TIG",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7767.png"
               },
-              "played": 10,
+              "played": 11,
               "won": 3,
               "drawn": 3,
-              "lost": 4,
-              "goalsFor": 9,
-              "goalsAgainst": 9,
+              "lost": 5,
+              "goalsFor": 10,
+              "goalsAgainst": 11,
               "points": 12
             },
             {
               "rank": 12,
+              "team": {
+                "id": "15",
+                "name": "Racing Club",
+                "shortName": "Racing",
+                "abbreviation": "RAC",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png"
+              },
+              "played": 11,
+              "won": 3,
+              "drawn": 2,
+              "lost": 6,
+              "goalsFor": 13,
+              "goalsAgainst": 17,
+              "points": 11
+            },
+            {
+              "rank": 13,
               "team": {
                 "id": "235",
                 "name": "Banfield",
@@ -31940,7 +31957,7 @@
               "points": 9
             },
             {
-              "rank": 13,
+              "rank": 14,
               "team": {
                 "id": "9739",
                 "name": "Aldosivi",
@@ -31957,23 +31974,6 @@
               "points": 8
             },
             {
-              "rank": 14,
-              "team": {
-                "id": "15",
-                "name": "Racing Club",
-                "shortName": "Racing",
-                "abbreviation": "RAC",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png"
-              },
-              "played": 10,
-              "won": 2,
-              "drawn": 2,
-              "lost": 6,
-              "goalsFor": 11,
-              "goalsAgainst": 16,
-              "points": 8
-            },
-            {
               "rank": 15,
               "team": {
                 "id": "19685",
@@ -31982,12 +31982,12 @@
                 "abbreviation": "AAE",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png"
               },
-              "played": 10,
+              "played": 11,
               "won": 1,
               "drawn": 3,
-              "lost": 6,
-              "goalsFor": 5,
-              "goalsAgainst": 13,
+              "lost": 7,
+              "goalsFor": 6,
+              "goalsAgainst": 15,
               "points": 6
             }
           ]
