@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-05T17:54:57.310Z",
+  "generatedAt": "2026-10-06T15:42:25.520Z",
   "source": "ESPN",
   "matches": [
     {
@@ -7915,7 +7915,7 @@
           "minute": "41'",
           "period": 1,
           "teamId": "20",
-          "player": "Julián Palacios",
+          "player": "Julián Palacio",
           "secondary": "Rafael Profini"
         },
         {
@@ -7939,7 +7939,7 @@
           "minute": "58'",
           "period": 2,
           "teamId": "20",
-          "player": "Julián Palacios",
+          "player": "Julián Palacio",
           "secondary": null
         },
         {
@@ -7980,7 +7980,7 @@
           "period": 2,
           "teamId": "20",
           "player": "Santiago Grella",
-          "secondary": "Julián Palacios"
+          "secondary": "Julián Palacio"
         },
         {
           "type": "substitution",
@@ -8152,7 +8152,7 @@
             },
             {
               "id": "298859",
-              "name": "Julián Palacios",
+              "name": "Julián Palacio",
               "jersey": "20",
               "position": "RM",
               "subbedIn": false,
@@ -17996,7 +17996,7 @@
           "period": 2,
           "teamId": "20",
           "player": "Eric Ramírez",
-          "secondary": "Julián Palacios"
+          "secondary": "Julián Palacio"
         },
         {
           "type": "substitution",
@@ -18392,7 +18392,7 @@
             },
             {
               "id": "298859",
-              "name": "Julián Palacios",
+              "name": "Julián Palacio",
               "jersey": "20",
               "position": "RM",
               "subbedIn": false,
@@ -31495,6 +31495,23 @@
             {
               "rank": 2,
               "team": {
+                "id": "21",
+                "name": "Vélez Sarsfield",
+                "shortName": "Vélez",
+                "abbreviation": "VEL",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png"
+              },
+              "played": 11,
+              "won": 5,
+              "drawn": 6,
+              "lost": 0,
+              "goalsFor": 17,
+              "goalsAgainst": 11,
+              "points": 21
+            },
+            {
+              "rank": 3,
+              "team": {
                 "id": "8950",
                 "name": "Defensa y Justicia",
                 "shortName": "Def. y Jus.",
@@ -31510,7 +31527,7 @@
               "points": 21
             },
             {
-              "rank": 3,
+              "rank": 4,
               "team": {
                 "id": "5",
                 "name": "Boca Juniors",
@@ -31527,41 +31544,7 @@
               "points": 20
             },
             {
-              "rank": 4,
-              "team": {
-                "id": "21",
-                "name": "Vélez Sarsfield",
-                "shortName": "Vélez",
-                "abbreviation": "VEL",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png"
-              },
-              "played": 10,
-              "won": 5,
-              "drawn": 5,
-              "lost": 0,
-              "goalsFor": 15,
-              "goalsAgainst": 9,
-              "points": 20
-            },
-            {
               "rank": 5,
-              "team": {
-                "id": "11972",
-                "name": "Gimnasia (Mendoza)",
-                "shortName": "Gimnasia (M)",
-                "abbreviation": "GMZ",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11972.png"
-              },
-              "played": 10,
-              "won": 5,
-              "drawn": 2,
-              "lost": 3,
-              "goalsFor": 14,
-              "goalsAgainst": 9,
-              "points": 17
-            },
-            {
-              "rank": 6,
               "team": {
                 "id": "12",
                 "name": "Lanús",
@@ -31578,7 +31561,7 @@
               "points": 17
             },
             {
-              "rank": 7,
+              "rank": 6,
               "team": {
                 "id": "14",
                 "name": "Newell's Old Boys",
@@ -31592,6 +31575,23 @@
               "lost": 2,
               "goalsFor": 11,
               "goalsAgainst": 8,
+              "points": 17
+            },
+            {
+              "rank": 7,
+              "team": {
+                "id": "11972",
+                "name": "Gimnasia (Mendoza)",
+                "shortName": "Gimnasia (M)",
+                "abbreviation": "GMZ",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11972.png"
+              },
+              "played": 11,
+              "won": 5,
+              "drawn": 2,
+              "lost": 4,
+              "goalsFor": 14,
+              "goalsAgainst": 12,
               "points": 17
             },
             {
@@ -31614,6 +31614,23 @@
             {
               "rank": 9,
               "team": {
+                "id": "8",
+                "name": "Estudiantes de La Plata",
+                "shortName": "Estudiantes",
+                "abbreviation": "EST",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
+              },
+              "played": 11,
+              "won": 4,
+              "drawn": 1,
+              "lost": 6,
+              "goalsFor": 13,
+              "goalsAgainst": 11,
+              "points": 13
+            },
+            {
+              "rank": 10,
+              "team": {
                 "id": "20",
                 "name": "Unión (Santa Fe)",
                 "shortName": "Unión (SF)",
@@ -31629,7 +31646,24 @@
               "points": 13
             },
             {
-              "rank": 10,
+              "rank": 11,
+              "team": {
+                "id": "17702",
+                "name": "Deportivo Riestra",
+                "shortName": "Riestra",
+                "abbreviation": "RIE",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17702.png"
+              },
+              "played": 11,
+              "won": 2,
+              "drawn": 5,
+              "lost": 4,
+              "goalsFor": 9,
+              "goalsAgainst": 11,
+              "points": 11
+            },
+            {
+              "rank": 12,
               "team": {
                 "id": "18",
                 "name": "San Lorenzo",
@@ -31646,40 +31680,6 @@
               "points": 11
             },
             {
-              "rank": 11,
-              "team": {
-                "id": "8",
-                "name": "Estudiantes de La Plata",
-                "shortName": "Estudiantes",
-                "abbreviation": "EST",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
-              },
-              "played": 10,
-              "won": 3,
-              "drawn": 1,
-              "lost": 6,
-              "goalsFor": 10,
-              "goalsAgainst": 11,
-              "points": 10
-            },
-            {
-              "rank": 12,
-              "team": {
-                "id": "17702",
-                "name": "Deportivo Riestra",
-                "shortName": "Riestra",
-                "abbreviation": "RIE",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17702.png"
-              },
-              "played": 10,
-              "won": 2,
-              "drawn": 4,
-              "lost": 4,
-              "goalsFor": 8,
-              "goalsAgainst": 10,
-              "points": 10
-            },
-            {
               "rank": 13,
               "team": {
                 "id": "7764",
@@ -31688,13 +31688,13 @@
                 "abbreviation": "PLA",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7764.png"
               },
-              "played": 10,
+              "played": 11,
               "won": 2,
-              "drawn": 3,
+              "drawn": 4,
               "lost": 5,
-              "goalsFor": 9,
-              "goalsAgainst": 15,
-              "points": 9
+              "goalsFor": 11,
+              "goalsAgainst": 17,
+              "points": 10
             },
             {
               "rank": 14,
@@ -31705,13 +31705,13 @@
                 "abbreviation": "CTR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11989.png"
               },
-              "played": 10,
+              "played": 11,
               "won": 2,
-              "drawn": 2,
+              "drawn": 3,
               "lost": 6,
-              "goalsFor": 7,
-              "goalsAgainst": 13,
-              "points": 8
+              "goalsFor": 8,
+              "goalsAgainst": 14,
+              "points": 9
             },
             {
               "rank": 15,
@@ -31772,6 +31772,23 @@
             {
               "rank": 3,
               "team": {
+                "id": "17",
+                "name": "Rosario Central",
+                "shortName": "Rosario Central",
+                "abbreviation": "ROS",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17.png"
+              },
+              "played": 11,
+              "won": 5,
+              "drawn": 4,
+              "lost": 2,
+              "goalsFor": 12,
+              "goalsAgainst": 9,
+              "points": 19
+            },
+            {
+              "rank": 4,
+              "team": {
                 "id": "10",
                 "name": "Huracán",
                 "shortName": "Huracán",
@@ -31785,23 +31802,6 @@
               "goalsFor": 11,
               "goalsAgainst": 8,
               "points": 19
-            },
-            {
-              "rank": 4,
-              "team": {
-                "id": "17",
-                "name": "Rosario Central",
-                "shortName": "Rosario Central",
-                "abbreviation": "ROS",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17.png"
-              },
-              "played": 10,
-              "won": 5,
-              "drawn": 3,
-              "lost": 2,
-              "goalsFor": 11,
-              "goalsAgainst": 8,
-              "points": 18
             },
             {
               "rank": 5,
@@ -31948,13 +31948,13 @@
                 "abbreviation": "BAN",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png"
               },
-              "played": 10,
+              "played": 11,
               "won": 2,
-              "drawn": 3,
+              "drawn": 4,
               "lost": 5,
-              "goalsFor": 11,
-              "goalsAgainst": 16,
-              "points": 9
+              "goalsFor": 12,
+              "goalsAgainst": 17,
+              "points": 10
             },
             {
               "rank": 14,
