@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-10T15:03:28.953Z",
+  "generatedAt": "2026-10-11T15:20:41.222Z",
   "source": "ESPN",
   "matches": [
     {
@@ -32313,13 +32313,13 @@
                 "abbreviation": "EST",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
               },
-              "played": 11,
+              "played": 12,
               "won": 4,
-              "drawn": 1,
+              "drawn": 2,
               "lost": 6,
-              "goalsFor": 13,
-              "goalsAgainst": 11,
-              "points": 13
+              "goalsFor": 15,
+              "goalsAgainst": 13,
+              "points": 14
             },
             {
               "rank": 10,
@@ -32398,13 +32398,13 @@
                 "abbreviation": "CTR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11989.png"
               },
-              "played": 11,
+              "played": 12,
               "won": 2,
-              "drawn": 3,
+              "drawn": 4,
               "lost": 6,
-              "goalsFor": 8,
-              "goalsAgainst": 14,
-              "points": 9
+              "goalsFor": 10,
+              "goalsAgainst": 16,
+              "points": 10
             },
             {
               "rank": 15,
@@ -32505,12 +32505,12 @@
                 "abbreviation": "HUR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10.png"
               },
-              "played": 11,
+              "played": 12,
               "won": 5,
               "drawn": 4,
-              "lost": 2,
+              "lost": 3,
               "goalsFor": 11,
-              "goalsAgainst": 8,
+              "goalsAgainst": 10,
               "points": 19
             },
             {
@@ -32556,16 +32556,33 @@
                 "abbreviation": "BAR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10060.png"
               },
-              "played": 11,
-              "won": 4,
+              "played": 12,
+              "won": 5,
               "drawn": 3,
               "lost": 4,
-              "goalsFor": 8,
+              "goalsFor": 10,
               "goalsAgainst": 9,
-              "points": 15
+              "points": 18
             },
             {
               "rank": 9,
+              "team": {
+                "id": "16",
+                "name": "River Plate",
+                "shortName": "River Plate",
+                "abbreviation": "RIV",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/16.png"
+              },
+              "played": 11,
+              "won": 5,
+              "drawn": 1,
+              "lost": 5,
+              "goalsFor": 14,
+              "goalsAgainst": 12,
+              "points": 16
+            },
+            {
+              "rank": 10,
               "team": {
                 "id": "9785",
                 "name": "Atlético Tucumán",
@@ -32582,24 +32599,24 @@
               "points": 14
             },
             {
-              "rank": 10,
+              "rank": 11,
               "team": {
-                "id": "16",
-                "name": "River Plate",
-                "shortName": "River Plate",
-                "abbreviation": "RIV",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/16.png"
+                "id": "235",
+                "name": "Banfield",
+                "shortName": "Banfield",
+                "abbreviation": "BAN",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png"
               },
-              "played": 10,
-              "won": 4,
-              "drawn": 1,
+              "played": 12,
+              "won": 3,
+              "drawn": 4,
               "lost": 5,
-              "goalsFor": 13,
-              "goalsAgainst": 12,
+              "goalsFor": 14,
+              "goalsAgainst": 18,
               "points": 13
             },
             {
-              "rank": 11,
+              "rank": 12,
               "team": {
                 "id": "7767",
                 "name": "Tigre",
@@ -32607,16 +32624,16 @@
                 "abbreviation": "TIG",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7767.png"
               },
-              "played": 11,
+              "played": 12,
               "won": 3,
               "drawn": 3,
-              "lost": 5,
-              "goalsFor": 10,
-              "goalsAgainst": 11,
+              "lost": 6,
+              "goalsFor": 11,
+              "goalsAgainst": 13,
               "points": 12
             },
             {
-              "rank": 12,
+              "rank": 13,
               "team": {
                 "id": "15",
                 "name": "Racing Club",
@@ -32631,23 +32648,6 @@
               "goalsFor": 13,
               "goalsAgainst": 17,
               "points": 11
-            },
-            {
-              "rank": 13,
-              "team": {
-                "id": "235",
-                "name": "Banfield",
-                "shortName": "Banfield",
-                "abbreviation": "BAN",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png"
-              },
-              "played": 11,
-              "won": 2,
-              "drawn": 4,
-              "lost": 5,
-              "goalsFor": 12,
-              "goalsAgainst": 17,
-              "points": 10
             },
             {
               "rank": 14,
@@ -32675,12 +32675,12 @@
                 "abbreviation": "AAE",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png"
               },
-              "played": 11,
+              "played": 12,
               "won": 1,
               "drawn": 3,
-              "lost": 7,
+              "lost": 8,
               "goalsFor": 6,
-              "goalsAgainst": 15,
+              "goalsAgainst": 16,
               "points": 6
             }
           ]
