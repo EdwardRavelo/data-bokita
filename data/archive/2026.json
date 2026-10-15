@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-14T14:20:35.822Z",
+  "generatedAt": "2026-10-15T13:58:09.425Z",
   "source": "ESPN",
   "matches": [
     {
@@ -11112,7 +11112,7 @@
           "minute": "72'",
           "period": 2,
           "teamId": "8950",
-          "player": "Luciano Gonzalez",
+          "player": "Luciano González",
           "secondary": "Ayrton Portillo"
         },
         {
@@ -11439,7 +11439,7 @@
             },
             {
               "id": "382777",
-              "name": "Luciano Gonzalez",
+              "name": "Luciano González",
               "jersey": "9",
               "position": "SUB",
               "subbedIn": true,
@@ -33133,13 +33133,13 @@
                 "abbreviation": "SARM",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10158.png"
               },
-              "played": 11,
+              "played": 12,
               "won": 6,
-              "drawn": 1,
+              "drawn": 2,
               "lost": 4,
-              "goalsFor": 20,
-              "goalsAgainst": 17,
-              "points": 19
+              "goalsFor": 21,
+              "goalsAgainst": 18,
+              "points": 20
             },
             {
               "rank": 5,
@@ -33218,13 +33218,13 @@
                 "abbreviation": "RIV",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/16.png"
               },
-              "played": 11,
+              "played": 12,
               "won": 5,
-              "drawn": 1,
+              "drawn": 2,
               "lost": 5,
-              "goalsFor": 14,
-              "goalsAgainst": 12,
-              "points": 16
+              "goalsFor": 15,
+              "goalsAgainst": 13,
+              "points": 17
             },
             {
               "rank": 10,
