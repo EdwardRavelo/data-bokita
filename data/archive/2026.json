@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-17T12:42:22.551Z",
+  "generatedAt": "2026-10-18T12:58:50.933Z",
   "source": "ESPN",
   "matches": [
     {
@@ -33518,13 +33518,13 @@
                 "abbreviation": "VEL",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png"
               },
-              "played": 12,
-              "won": 5,
+              "played": 13,
+              "won": 6,
               "drawn": 6,
               "lost": 1,
-              "goalsFor": 17,
+              "goalsFor": 18,
               "goalsAgainst": 13,
-              "points": 21
+              "points": 24
             },
             {
               "rank": 5,
@@ -33535,13 +33535,13 @@
                 "abbreviation": "LAN",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12.png"
               },
-              "played": 12,
-              "won": 6,
+              "played": 13,
+              "won": 7,
               "drawn": 2,
               "lost": 4,
-              "goalsFor": 15,
+              "goalsFor": 16,
               "goalsAgainst": 9,
-              "points": 20
+              "points": 23
             },
             {
               "rank": 6,
@@ -33552,12 +33552,12 @@
                 "abbreviation": "GMZ",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11972.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 6,
               "drawn": 2,
-              "lost": 4,
+              "lost": 5,
               "goalsFor": 15,
-              "goalsAgainst": 12,
+              "goalsAgainst": 13,
               "points": 20
             },
             {
@@ -33671,12 +33671,12 @@
                 "abbreviation": "PLA",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7764.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 2,
               "drawn": 5,
-              "lost": 5,
+              "lost": 6,
               "goalsFor": 12,
-              "goalsAgainst": 18,
+              "goalsAgainst": 19,
               "points": 11
             },
             {
@@ -33727,16 +33727,33 @@
                 "abbreviation": "ROS",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17.png"
               },
-              "played": 12,
-              "won": 6,
+              "played": 13,
+              "won": 7,
               "drawn": 4,
               "lost": 2,
-              "goalsFor": 17,
-              "goalsAgainst": 9,
-              "points": 22
+              "goalsFor": 20,
+              "goalsAgainst": 11,
+              "points": 25
             },
             {
               "rank": 2,
+              "team": {
+                "id": "3",
+                "name": "Argentinos Juniors",
+                "shortName": "Argentinos",
+                "abbreviation": "ARGJ",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png"
+              },
+              "played": 13,
+              "won": 7,
+              "drawn": 4,
+              "lost": 2,
+              "goalsFor": 17,
+              "goalsAgainst": 11,
+              "points": 25
+            },
+            {
+              "rank": 3,
               "team": {
                 "id": "4",
                 "name": "Belgrano (Córdoba)",
@@ -33750,23 +33767,6 @@
               "lost": 2,
               "goalsFor": 14,
               "goalsAgainst": 7,
-              "points": 22
-            },
-            {
-              "rank": 3,
-              "team": {
-                "id": "3",
-                "name": "Argentinos Juniors",
-                "shortName": "Argentinos",
-                "abbreviation": "ARGJ",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png"
-              },
-              "played": 12,
-              "won": 6,
-              "drawn": 4,
-              "lost": 2,
-              "goalsFor": 16,
-              "goalsAgainst": 11,
               "points": 22
             },
             {
@@ -33823,6 +33823,23 @@
             {
               "rank": 7,
               "team": {
+                "id": "9744",
+                "name": "Independiente Rivadavia",
+                "shortName": "Ind. Rivadavia",
+                "abbreviation": "RIV",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png"
+              },
+              "played": 13,
+              "won": 5,
+              "drawn": 4,
+              "lost": 4,
+              "goalsFor": 17,
+              "goalsAgainst": 21,
+              "points": 19
+            },
+            {
+              "rank": 8,
+              "team": {
                 "id": "10060",
                 "name": "Barracas Central",
                 "shortName": "Barracas",
@@ -33835,23 +33852,6 @@
               "lost": 4,
               "goalsFor": 10,
               "goalsAgainst": 9,
-              "points": 18
-            },
-            {
-              "rank": 8,
-              "team": {
-                "id": "9744",
-                "name": "Independiente Rivadavia",
-                "shortName": "Ind. Rivadavia",
-                "abbreviation": "RIV",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png"
-              },
-              "played": 12,
-              "won": 5,
-              "drawn": 3,
-              "lost": 4,
-              "goalsFor": 15,
-              "goalsAgainst": 19,
               "points": 18
             },
             {
@@ -33880,33 +33880,16 @@
                 "abbreviation": "CAT",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9785.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 3,
               "drawn": 5,
-              "lost": 4,
-              "goalsFor": 10,
-              "goalsAgainst": 10,
+              "lost": 5,
+              "goalsFor": 12,
+              "goalsAgainst": 13,
               "points": 14
             },
             {
               "rank": 11,
-              "team": {
-                "id": "235",
-                "name": "Banfield",
-                "shortName": "Banfield",
-                "abbreviation": "BAN",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png"
-              },
-              "played": 12,
-              "won": 3,
-              "drawn": 4,
-              "lost": 5,
-              "goalsFor": 14,
-              "goalsAgainst": 18,
-              "points": 13
-            },
-            {
-              "rank": 12,
               "team": {
                 "id": "7767",
                 "name": "Tigre",
@@ -33914,13 +33897,30 @@
                 "abbreviation": "TIG",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7767.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 3,
-              "drawn": 3,
+              "drawn": 4,
               "lost": 6,
-              "goalsFor": 11,
-              "goalsAgainst": 13,
-              "points": 12
+              "goalsFor": 13,
+              "goalsAgainst": 15,
+              "points": 13
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": "235",
+                "name": "Banfield",
+                "shortName": "Banfield",
+                "abbreviation": "BAN",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png"
+              },
+              "played": 13,
+              "won": 3,
+              "drawn": 4,
+              "lost": 6,
+              "goalsFor": 14,
+              "goalsAgainst": 19,
+              "points": 13
             },
             {
               "rank": 13,
