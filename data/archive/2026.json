@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-18T12:58:50.933Z",
+  "generatedAt": "2026-10-19T16:12:33.485Z",
   "source": "ESPN",
   "matches": [
     {
@@ -33569,13 +33569,13 @@
                 "abbreviation": "IND",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 5,
-              "drawn": 3,
+              "drawn": 4,
               "lost": 4,
-              "goalsFor": 11,
-              "goalsAgainst": 12,
-              "points": 18
+              "goalsFor": 12,
+              "goalsAgainst": 13,
+              "points": 19
             },
             {
               "rank": 8,
@@ -33597,35 +33597,35 @@
             {
               "rank": 9,
               "team": {
-                "id": "8",
-                "name": "Estudiantes de La Plata",
-                "shortName": "Estudiantes",
-                "abbreviation": "EST",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
-              },
-              "played": 12,
-              "won": 4,
-              "drawn": 2,
-              "lost": 6,
-              "goalsFor": 15,
-              "goalsAgainst": 13,
-              "points": 14
-            },
-            {
-              "rank": 10,
-              "team": {
                 "id": "18",
                 "name": "San Lorenzo",
                 "shortName": "San Lorenzo",
                 "abbreviation": "SLO",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18.png"
               },
-              "played": 12,
-              "won": 4,
+              "played": 13,
+              "won": 5,
               "drawn": 2,
               "lost": 6,
-              "goalsFor": 5,
-              "goalsAgainst": 11,
+              "goalsFor": 7,
+              "goalsAgainst": 12,
+              "points": 17
+            },
+            {
+              "rank": 10,
+              "team": {
+                "id": "8",
+                "name": "Estudiantes de La Plata",
+                "shortName": "Estudiantes",
+                "abbreviation": "EST",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
+              },
+              "played": 13,
+              "won": 4,
+              "drawn": 2,
+              "lost": 7,
+              "goalsFor": 16,
+              "goalsAgainst": 15,
               "points": 14
             },
             {
@@ -33761,12 +33761,12 @@
                 "abbreviation": "BEL",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 6,
               "drawn": 4,
-              "lost": 2,
+              "lost": 3,
               "goalsFor": 14,
-              "goalsAgainst": 7,
+              "goalsAgainst": 10,
               "points": 22
             },
             {
@@ -33789,6 +33789,23 @@
             {
               "rank": 5,
               "team": {
+                "id": "16",
+                "name": "River Plate",
+                "shortName": "River Plate",
+                "abbreviation": "RIV",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/16.png"
+              },
+              "played": 13,
+              "won": 6,
+              "drawn": 2,
+              "lost": 5,
+              "goalsFor": 18,
+              "goalsAgainst": 13,
+              "points": 20
+            },
+            {
+              "rank": 6,
+              "team": {
                 "id": "10158",
                 "name": "Sarmiento (Junín)",
                 "shortName": "Sarmiento (J)",
@@ -33804,7 +33821,7 @@
               "points": 20
             },
             {
-              "rank": 6,
+              "rank": 7,
               "team": {
                 "id": "10",
                 "name": "Huracán",
@@ -33821,7 +33838,7 @@
               "points": 19
             },
             {
-              "rank": 7,
+              "rank": 8,
               "team": {
                 "id": "9744",
                 "name": "Independiente Rivadavia",
@@ -33838,7 +33855,7 @@
               "points": 19
             },
             {
-              "rank": 8,
+              "rank": 9,
               "team": {
                 "id": "10060",
                 "name": "Barracas Central",
@@ -33853,23 +33870,6 @@
               "goalsFor": 10,
               "goalsAgainst": 9,
               "points": 18
-            },
-            {
-              "rank": 9,
-              "team": {
-                "id": "16",
-                "name": "River Plate",
-                "shortName": "River Plate",
-                "abbreviation": "RIV",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/16.png"
-              },
-              "played": 12,
-              "won": 5,
-              "drawn": 2,
-              "lost": 5,
-              "goalsFor": 15,
-              "goalsAgainst": 13,
-              "points": 17
             },
             {
               "rank": 10,
@@ -33931,33 +33931,16 @@
                 "abbreviation": "RAC",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 3,
-              "drawn": 2,
+              "drawn": 3,
               "lost": 7,
-              "goalsFor": 13,
-              "goalsAgainst": 19,
-              "points": 11
+              "goalsFor": 14,
+              "goalsAgainst": 20,
+              "points": 12
             },
             {
               "rank": 14,
-              "team": {
-                "id": "9739",
-                "name": "Aldosivi",
-                "shortName": "Aldosivi",
-                "abbreviation": "ALDO",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9739.png"
-              },
-              "played": 12,
-              "won": 2,
-              "drawn": 2,
-              "lost": 8,
-              "goalsFor": 13,
-              "goalsAgainst": 20,
-              "points": 8
-            },
-            {
-              "rank": 15,
               "team": {
                 "id": "19685",
                 "name": "Estudiantes de Río Cuarto",
@@ -33965,13 +33948,30 @@
                 "abbreviation": "AAE",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png"
               },
-              "played": 12,
-              "won": 1,
+              "played": 13,
+              "won": 2,
               "drawn": 3,
               "lost": 8,
-              "goalsFor": 6,
-              "goalsAgainst": 16,
-              "points": 6
+              "goalsFor": 8,
+              "goalsAgainst": 17,
+              "points": 9
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": "9739",
+                "name": "Aldosivi",
+                "shortName": "Aldosivi",
+                "abbreviation": "ALDO",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9739.png"
+              },
+              "played": 13,
+              "won": 2,
+              "drawn": 2,
+              "lost": 9,
+              "goalsFor": 14,
+              "goalsAgainst": 22,
+              "points": 8
             }
           ]
         }
