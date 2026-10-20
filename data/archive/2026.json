@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-19T16:12:33.485Z",
+  "generatedAt": "2026-10-20T14:06:58.212Z",
   "source": "ESPN",
   "matches": [
     {
@@ -33546,6 +33546,23 @@
             {
               "rank": 6,
               "team": {
+                "id": "14",
+                "name": "Newell's Old Boys",
+                "shortName": "Newell's",
+                "abbreviation": "NOB",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/14.png"
+              },
+              "played": 13,
+              "won": 5,
+              "drawn": 5,
+              "lost": 3,
+              "goalsFor": 13,
+              "goalsAgainst": 10,
+              "points": 20
+            },
+            {
+              "rank": 7,
+              "team": {
                 "id": "11972",
                 "name": "Gimnasia (Mendoza)",
                 "shortName": "Gimnasia (M)",
@@ -33561,7 +33578,7 @@
               "points": 20
             },
             {
-              "rank": 7,
+              "rank": 8,
               "team": {
                 "id": "11",
                 "name": "Independiente",
@@ -33576,23 +33593,6 @@
               "goalsFor": 12,
               "goalsAgainst": 13,
               "points": 19
-            },
-            {
-              "rank": 8,
-              "team": {
-                "id": "14",
-                "name": "Newell's Old Boys",
-                "shortName": "Newell's",
-                "abbreviation": "NOB",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/14.png"
-              },
-              "played": 12,
-              "won": 4,
-              "drawn": 5,
-              "lost": 3,
-              "goalsFor": 11,
-              "goalsAgainst": 9,
-              "points": 17
             },
             {
               "rank": 9,
@@ -33637,13 +33637,13 @@
                 "abbreviation": "USF",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 4,
-              "drawn": 1,
+              "drawn": 2,
               "lost": 7,
-              "goalsFor": 17,
-              "goalsAgainst": 21,
-              "points": 13
+              "goalsFor": 18,
+              "goalsAgainst": 22,
+              "points": 14
             },
             {
               "rank": 12,
@@ -33654,13 +33654,13 @@
                 "abbreviation": "RIE",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17702.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 2,
-              "drawn": 5,
+              "drawn": 6,
               "lost": 5,
-              "goalsFor": 9,
-              "goalsAgainst": 12,
-              "points": 11
+              "goalsFor": 10,
+              "goalsAgainst": 13,
+              "points": 12
             },
             {
               "rank": 13,
@@ -33688,12 +33688,12 @@
                 "abbreviation": "CTR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11989.png"
               },
-              "played": 12,
+              "played": 13,
               "won": 2,
               "drawn": 4,
-              "lost": 6,
-              "goalsFor": 10,
-              "goalsAgainst": 16,
+              "lost": 7,
+              "goalsFor": 11,
+              "goalsAgainst": 18,
               "points": 10
             },
             {
@@ -33789,6 +33789,23 @@
             {
               "rank": 5,
               "team": {
+                "id": "10158",
+                "name": "Sarmiento (Junín)",
+                "shortName": "Sarmiento (J)",
+                "abbreviation": "SARM",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10158.png"
+              },
+              "played": 13,
+              "won": 6,
+              "drawn": 3,
+              "lost": 4,
+              "goalsFor": 22,
+              "goalsAgainst": 19,
+              "points": 21
+            },
+            {
+              "rank": 6,
+              "team": {
                 "id": "16",
                 "name": "River Plate",
                 "shortName": "River Plate",
@@ -33804,24 +33821,24 @@
               "points": 20
             },
             {
-              "rank": 6,
+              "rank": 7,
               "team": {
-                "id": "10158",
-                "name": "Sarmiento (Junín)",
-                "shortName": "Sarmiento (J)",
-                "abbreviation": "SARM",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10158.png"
+                "id": "10060",
+                "name": "Barracas Central",
+                "shortName": "Barracas",
+                "abbreviation": "BAR",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10060.png"
               },
-              "played": 12,
-              "won": 6,
-              "drawn": 2,
+              "played": 13,
+              "won": 5,
+              "drawn": 4,
               "lost": 4,
-              "goalsFor": 21,
-              "goalsAgainst": 18,
-              "points": 20
+              "goalsFor": 11,
+              "goalsAgainst": 10,
+              "points": 19
             },
             {
-              "rank": 7,
+              "rank": 8,
               "team": {
                 "id": "10",
                 "name": "Huracán",
@@ -33838,7 +33855,7 @@
               "points": 19
             },
             {
-              "rank": 8,
+              "rank": 9,
               "team": {
                 "id": "9744",
                 "name": "Independiente Rivadavia",
@@ -33853,23 +33870,6 @@
               "goalsFor": 17,
               "goalsAgainst": 21,
               "points": 19
-            },
-            {
-              "rank": 9,
-              "team": {
-                "id": "10060",
-                "name": "Barracas Central",
-                "shortName": "Barracas",
-                "abbreviation": "BAR",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10060.png"
-              },
-              "played": 12,
-              "won": 5,
-              "drawn": 3,
-              "lost": 4,
-              "goalsFor": 10,
-              "goalsAgainst": 9,
-              "points": 18
             },
             {
               "rank": 10,
