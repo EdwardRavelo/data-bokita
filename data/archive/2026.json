@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-25T13:34:17.185Z",
+  "generatedAt": "2026-10-26T15:51:55.415Z",
   "source": "ESPN",
   "matches": [
     {
@@ -1837,6 +1837,42 @@
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png"
         },
         "score": 3,
+        "shootout": null
+      }
+    },
+    {
+      "id": "401841636",
+      "date": "2026-10-25T20:00Z",
+      "timeConfirmed": true,
+      "status": "finished",
+      "clock": null,
+      "decidedBy": "regular",
+      "competition": {
+        "slug": "arg.1",
+        "name": "Liga Profesional",
+        "stage": "Torneo Clausura"
+      },
+      "venue": "Estadio Libertadores de América",
+      "home": {
+        "team": {
+          "id": "11",
+          "name": "Independiente",
+          "shortName": "Independiente",
+          "abbreviation": "IND",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11.png"
+        },
+        "score": 0,
+        "shootout": null
+      },
+      "away": {
+        "team": {
+          "id": "5",
+          "name": "Boca Juniors",
+          "shortName": "Boca",
+          "abbreviation": "CABJ",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png"
+        },
+        "score": 1,
         "shootout": null
       }
     }
@@ -19943,6 +19979,631 @@
       ],
       "eventsMatchScore": true
     },
+    "401841636": {
+      "events": [
+        {
+          "type": "yellowCard",
+          "minute": "20'",
+          "period": 1,
+          "teamId": "5",
+          "player": "Lautaro Di Lollo",
+          "secondary": null
+        },
+        {
+          "type": "yellowCard",
+          "minute": "45'+1'",
+          "period": 1,
+          "teamId": "11",
+          "player": "Iván Marcone",
+          "secondary": null
+        },
+        {
+          "type": "yellowCard",
+          "minute": "53'",
+          "period": 2,
+          "teamId": "11",
+          "player": "Chimy Ávila",
+          "secondary": null
+        },
+        {
+          "type": "substitution",
+          "minute": "60'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Sebastián Villa",
+          "secondary": "Alan Velasco"
+        },
+        {
+          "type": "yellowCard",
+          "minute": "64'",
+          "period": 2,
+          "teamId": "11",
+          "player": "Mateo Pérez",
+          "secondary": null
+        },
+        {
+          "type": "substitution",
+          "minute": "66'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Enner Valencia",
+          "secondary": "Miguel Merentiel"
+        },
+        {
+          "type": "yellowCard",
+          "minute": "67'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Milton Delgado",
+          "secondary": null
+        },
+        {
+          "type": "substitution",
+          "minute": "69'",
+          "period": 2,
+          "teamId": "11",
+          "player": "Matías Abaldo",
+          "secondary": "Josias Palais"
+        },
+        {
+          "type": "yellowCard",
+          "minute": "77'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Facundo Herrera",
+          "secondary": null
+        },
+        {
+          "type": "substitution",
+          "minute": "77'",
+          "period": 2,
+          "teamId": "11",
+          "player": "Iván Morales",
+          "secondary": "Maximiliano Meza"
+        },
+        {
+          "type": "substitution",
+          "minute": "78'",
+          "period": 2,
+          "teamId": "11",
+          "player": "Ruben Martinez",
+          "secondary": "Mateo Pérez"
+        },
+        {
+          "type": "substitution",
+          "minute": "81'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Carlos Palacios",
+          "secondary": "Leonel Flores"
+        },
+        {
+          "type": "substitution",
+          "minute": "86'",
+          "period": 2,
+          "teamId": "11",
+          "player": "Tomás Parmo",
+          "secondary": "Chimy Ávila"
+        },
+        {
+          "type": "substitution",
+          "minute": "86'",
+          "period": 2,
+          "teamId": "11",
+          "player": "Felipe Tempone",
+          "secondary": "Santiago Montiel"
+        },
+        {
+          "type": "goal",
+          "minute": "88'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Facundo Herrera",
+          "secondary": "Sebastián Villa"
+        },
+        {
+          "type": "yellowCard",
+          "minute": "90'+2'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Malcom Braida",
+          "secondary": null
+        }
+      ],
+      "stats": [
+        {
+          "key": "possessionPct",
+          "label": "Posesión",
+          "home": "34.4%",
+          "away": "65.6%",
+          "homeValue": 34.4,
+          "awayValue": 65.6
+        },
+        {
+          "key": "totalShots",
+          "label": "Remates",
+          "home": "23",
+          "away": "10",
+          "homeValue": 23,
+          "awayValue": 10
+        },
+        {
+          "key": "shotsOnTarget",
+          "label": "Remates al arco",
+          "home": "5",
+          "away": "4",
+          "homeValue": 5,
+          "awayValue": 4
+        },
+        {
+          "key": "saves",
+          "label": "Atajadas",
+          "home": "3",
+          "away": "5",
+          "homeValue": 3,
+          "awayValue": 5
+        },
+        {
+          "key": "wonCorners",
+          "label": "Córners",
+          "home": "4",
+          "away": "3",
+          "homeValue": 4,
+          "awayValue": 3
+        },
+        {
+          "key": "offsides",
+          "label": "Offsides",
+          "home": "0",
+          "away": "2",
+          "homeValue": 0,
+          "awayValue": 2
+        },
+        {
+          "key": "foulsCommitted",
+          "label": "Faltas",
+          "home": "14",
+          "away": "17",
+          "homeValue": 14,
+          "awayValue": 17
+        },
+        {
+          "key": "yellowCards",
+          "label": "Amarillas",
+          "home": "3",
+          "away": "4",
+          "homeValue": 3,
+          "awayValue": 4
+        },
+        {
+          "key": "redCards",
+          "label": "Rojas",
+          "home": "0",
+          "away": "0",
+          "homeValue": 0,
+          "awayValue": 0
+        },
+        {
+          "key": "totalPasses",
+          "label": "Pases",
+          "home": "311",
+          "away": "602",
+          "homeValue": 311,
+          "awayValue": 602
+        },
+        {
+          "key": "accuratePasses",
+          "label": "Pases precisos",
+          "home": "229",
+          "away": "525",
+          "homeValue": 229,
+          "awayValue": 525
+        },
+        {
+          "key": "totalTackles",
+          "label": "Quites",
+          "home": "21",
+          "away": "21",
+          "homeValue": 21,
+          "awayValue": 21
+        },
+        {
+          "key": "interceptions",
+          "label": "Intercepciones",
+          "home": "14",
+          "away": "7",
+          "homeValue": 14,
+          "awayValue": 7
+        }
+      ],
+      "lineups": [
+        {
+          "teamId": "11",
+          "formation": "4-3-3",
+          "starters": [
+            {
+              "id": "203067",
+              "name": "Santiago Mele",
+              "jersey": "77",
+              "position": "G",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "164756",
+              "name": "Santiago Arias",
+              "jersey": "4",
+              "position": "RB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "292059",
+              "name": "Nahuel Banegas",
+              "jersey": "5",
+              "position": "LB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "127893",
+              "name": "Iván Marcone",
+              "jersey": "23",
+              "position": "CM",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "236681",
+              "name": "Sebastian Valdez",
+              "jersey": "36",
+              "position": "CD-R",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "3112633",
+              "name": "Juan Migue Arrayago",
+              "jersey": "35",
+              "position": "CD-L",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "317219",
+              "name": "Mateo Pérez",
+              "jersey": "16",
+              "position": "RM",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "172539",
+              "name": "Maximiliano Meza",
+              "jersey": "8",
+              "position": "LM",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "217588",
+              "name": "Chimy Ávila",
+              "jersey": "6",
+              "position": "F",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "307331",
+              "name": "Santiago Montiel",
+              "jersey": "7",
+              "position": "RF",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "414360",
+              "name": "Josias Palais",
+              "jersey": "24",
+              "position": "LF",
+              "subbedIn": false,
+              "subbedOut": true
+            }
+          ],
+          "bench": [
+            {
+              "id": "361260",
+              "name": "Ruben Martinez",
+              "jersey": "32",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "242437",
+              "name": "Iván Morales",
+              "jersey": "9",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "158304",
+              "name": "Luciano Cabral",
+              "jersey": "10",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "154747",
+              "name": "Rodrigo Rey",
+              "jersey": "33",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "420706",
+              "name": "Felipe Tempone",
+              "jersey": "34",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "310003",
+              "name": "Facundo Zabala",
+              "jersey": "22",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "384667",
+              "name": "Lautaro Millán",
+              "jersey": "14",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "285042",
+              "name": "Franco Calderon",
+              "jersey": "2",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "293381",
+              "name": "Juan Fedorco",
+              "jersey": "13",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "187848",
+              "name": "Leonardo Godoy",
+              "jersey": "29",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "379664",
+              "name": "Tomás Parmo",
+              "jersey": "30",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "359827",
+              "name": "Matías Abaldo",
+              "jersey": "19",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            }
+          ]
+        },
+        {
+          "teamId": "5",
+          "formation": "4-2-3-1",
+          "starters": [
+            {
+              "id": "166323",
+              "name": "Álvaro Montero",
+              "jersey": "1",
+              "position": "G",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "338991",
+              "name": "Leandro Lozano",
+              "jersey": "17",
+              "position": "RB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "259166",
+              "name": "Malcom Braida",
+              "jersey": "27",
+              "position": "LB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "382978",
+              "name": "Milton Delgado",
+              "jersey": "18",
+              "position": "LM",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "341457",
+              "name": "Lautaro Di Lollo",
+              "jersey": "2",
+              "position": "CD-R",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "400357",
+              "name": "Facundo Herrera",
+              "jersey": "42",
+              "position": "CD-L",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "233734",
+              "name": "Santiago Ascacibar",
+              "jersey": "25",
+              "position": "AM-R",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "153115",
+              "name": "Leandro Paredes",
+              "jersey": "5",
+              "position": "RM",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "260812",
+              "name": "Miguel Merentiel",
+              "jersey": "16",
+              "position": "F",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "286516",
+              "name": "Alan Velasco",
+              "jersey": "20",
+              "position": "AM",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "400360",
+              "name": "Leonel Flores",
+              "jersey": "19",
+              "position": "AM-L",
+              "subbedIn": false,
+              "subbedOut": true
+            }
+          ],
+          "bench": [
+            {
+              "id": "202025",
+              "name": "Carlos Palacios",
+              "jersey": "7",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "392903",
+              "name": "Joaquín Ruíz",
+              "jersey": "53",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "274298",
+              "name": "William Alarcón",
+              "jersey": "15",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "141790",
+              "name": "Sebastián Villa",
+              "jersey": "22",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "189952",
+              "name": "Jorge Figal",
+              "jersey": "4",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "171771",
+              "name": "Enner Valencia",
+              "jersey": "13",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "303633",
+              "name": "Marco Pellegrino",
+              "jersey": "26",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "286902",
+              "name": "Ayrton Costa",
+              "jersey": "32",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "152706",
+              "name": "Rodrigo Battaglia",
+              "jersey": "6",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "335580",
+              "name": "Leandro Brey",
+              "jersey": "12",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "371485",
+              "name": "Dylan Gorosito",
+              "jersey": "24",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "310767",
+              "name": "Milton Gimenez",
+              "jersey": "9",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            }
+          ]
+        }
+      ],
+      "eventsMatchScore": true
+    },
     "401846944": {
       "events": [
         {
@@ -34131,6 +34792,40 @@
             {
               "rank": 2,
               "team": {
+                "id": "21",
+                "name": "Vélez Sarsfield",
+                "shortName": "Vélez",
+                "abbreviation": "VEL",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png"
+              },
+              "played": 14,
+              "won": 7,
+              "drawn": 6,
+              "lost": 1,
+              "goalsFor": 23,
+              "goalsAgainst": 13,
+              "points": 27
+            },
+            {
+              "rank": 3,
+              "team": {
+                "id": "5",
+                "name": "Boca Juniors",
+                "shortName": "Boca",
+                "abbreviation": "CABJ",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png"
+              },
+              "played": 14,
+              "won": 7,
+              "drawn": 6,
+              "lost": 1,
+              "goalsFor": 22,
+              "goalsAgainst": 14,
+              "points": 27
+            },
+            {
+              "rank": 4,
+              "team": {
                 "id": "8950",
                 "name": "Defensa y Justicia",
                 "shortName": "Def. y Jus.",
@@ -34146,24 +34841,7 @@
               "points": 27
             },
             {
-              "rank": 3,
-              "team": {
-                "id": "5",
-                "name": "Boca Juniors",
-                "shortName": "Boca",
-                "abbreviation": "CABJ",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png"
-              },
-              "played": 13,
-              "won": 6,
-              "drawn": 6,
-              "lost": 1,
-              "goalsFor": 21,
-              "goalsAgainst": 14,
-              "points": 24
-            },
-            {
-              "rank": 4,
+              "rank": 5,
               "team": {
                 "id": "12",
                 "name": "Lanús",
@@ -34177,23 +34855,6 @@
               "lost": 4,
               "goalsFor": 17,
               "goalsAgainst": 10,
-              "points": 24
-            },
-            {
-              "rank": 5,
-              "team": {
-                "id": "21",
-                "name": "Vélez Sarsfield",
-                "shortName": "Vélez",
-                "abbreviation": "VEL",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png"
-              },
-              "played": 13,
-              "won": 6,
-              "drawn": 6,
-              "lost": 1,
-              "goalsFor": 18,
-              "goalsAgainst": 13,
               "points": 24
             },
             {
@@ -34239,12 +34900,12 @@
                 "abbreviation": "IND",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11.png"
               },
-              "played": 13,
+              "played": 14,
               "won": 5,
               "drawn": 4,
-              "lost": 4,
+              "lost": 5,
               "goalsFor": 12,
-              "goalsAgainst": 13,
+              "goalsAgainst": 14,
               "points": 19
             },
             {
@@ -34341,12 +35002,12 @@
                 "abbreviation": "CTR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11989.png"
               },
-              "played": 13,
+              "played": 14,
               "won": 2,
               "drawn": 4,
-              "lost": 7,
+              "lost": 8,
               "goalsFor": 11,
-              "goalsAgainst": 18,
+              "goalsAgainst": 23,
               "points": 10
             },
             {
@@ -34425,22 +35086,56 @@
             {
               "rank": 4,
               "team": {
+                "id": "16",
+                "name": "River Plate",
+                "shortName": "River Plate",
+                "abbreviation": "RIV",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/16.png"
+              },
+              "played": 14,
+              "won": 7,
+              "drawn": 2,
+              "lost": 5,
+              "goalsFor": 19,
+              "goalsAgainst": 13,
+              "points": 23
+            },
+            {
+              "rank": 5,
+              "team": {
                 "id": "4",
                 "name": "Belgrano (Córdoba)",
                 "shortName": "Belgrano",
                 "abbreviation": "BEL",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4.png"
               },
-              "played": 13,
+              "played": 14,
               "won": 6,
               "drawn": 4,
-              "lost": 3,
+              "lost": 4,
               "goalsFor": 14,
-              "goalsAgainst": 10,
+              "goalsAgainst": 11,
               "points": 22
             },
             {
-              "rank": 5,
+              "rank": 6,
+              "team": {
+                "id": "10060",
+                "name": "Barracas Central",
+                "shortName": "Barracas",
+                "abbreviation": "BAR",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10060.png"
+              },
+              "played": 14,
+              "won": 6,
+              "drawn": 4,
+              "lost": 4,
+              "goalsFor": 13,
+              "goalsAgainst": 11,
+              "points": 22
+            },
+            {
+              "rank": 7,
               "team": {
                 "id": "10158",
                 "name": "Sarmiento (Junín)",
@@ -34455,40 +35150,6 @@
               "goalsFor": 22,
               "goalsAgainst": 21,
               "points": 21
-            },
-            {
-              "rank": 6,
-              "team": {
-                "id": "16",
-                "name": "River Plate",
-                "shortName": "River Plate",
-                "abbreviation": "RIV",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/16.png"
-              },
-              "played": 13,
-              "won": 6,
-              "drawn": 2,
-              "lost": 5,
-              "goalsFor": 18,
-              "goalsAgainst": 13,
-              "points": 20
-            },
-            {
-              "rank": 7,
-              "team": {
-                "id": "10060",
-                "name": "Barracas Central",
-                "shortName": "Barracas",
-                "abbreviation": "BAR",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10060.png"
-              },
-              "played": 13,
-              "won": 5,
-              "drawn": 4,
-              "lost": 4,
-              "goalsFor": 11,
-              "goalsAgainst": 10,
-              "points": 19
             },
             {
               "rank": 8,
@@ -34584,33 +35245,16 @@
                 "abbreviation": "RAC",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png"
               },
-              "played": 13,
+              "played": 14,
               "won": 3,
               "drawn": 3,
-              "lost": 7,
+              "lost": 8,
               "goalsFor": 14,
-              "goalsAgainst": 20,
+              "goalsAgainst": 21,
               "points": 12
             },
             {
               "rank": 14,
-              "team": {
-                "id": "19685",
-                "name": "Estudiantes de Río Cuarto",
-                "shortName": "Estudiantes RC",
-                "abbreviation": "AAE",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png"
-              },
-              "played": 13,
-              "won": 2,
-              "drawn": 3,
-              "lost": 8,
-              "goalsFor": 8,
-              "goalsAgainst": 17,
-              "points": 9
-            },
-            {
-              "rank": 15,
               "team": {
                 "id": "9739",
                 "name": "Aldosivi",
@@ -34618,13 +35262,30 @@
                 "abbreviation": "ALDO",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9739.png"
               },
-              "played": 13,
-              "won": 2,
+              "played": 14,
+              "won": 3,
               "drawn": 2,
               "lost": 9,
-              "goalsFor": 14,
+              "goalsFor": 15,
               "goalsAgainst": 22,
-              "points": 8
+              "points": 11
+            },
+            {
+              "rank": 15,
+              "team": {
+                "id": "19685",
+                "name": "Estudiantes de Río Cuarto",
+                "shortName": "Estudiantes RC",
+                "abbreviation": "AAE",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png"
+              },
+              "played": 14,
+              "won": 2,
+              "drawn": 3,
+              "lost": 9,
+              "goalsFor": 9,
+              "goalsAgainst": 19,
+              "points": 9
             }
           ]
         }
