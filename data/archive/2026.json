@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-26T15:51:55.415Z",
+  "generatedAt": "2026-10-27T15:08:21.119Z",
   "source": "ESPN",
   "matches": [
     {
@@ -6665,7 +6665,7 @@
             },
             {
               "id": "254176",
-              "name": "Imanol González",
+              "name": "Imanol Gonzalez",
               "jersey": "6",
               "position": "CD-L",
               "subbedIn": false,
@@ -6869,7 +6869,7 @@
           "minute": "45'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moya",
+          "player": "Santiago Moyano",
           "secondary": "Lucas González"
         },
         {
@@ -6950,7 +6950,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Lucas Varaldo",
-          "secondary": "Matias Vera"
+          "secondary": "Matías Vera"
         },
         {
           "type": "yellowCard",
@@ -7098,7 +7098,7 @@
             },
             {
               "id": "218440",
-              "name": "Matias Vera",
+              "name": "Matías Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -7196,7 +7196,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moya",
+              "name": "Santiago Moyano",
               "jersey": "33",
               "position": "SUB",
               "subbedIn": true,
@@ -16853,7 +16853,7 @@
           "minute": "62'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moya",
+          "player": "Santiago Moyano",
           "secondary": null
         },
         {
@@ -16870,7 +16870,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Martín Francisco Cuitiño",
-          "secondary": "Santiago Moya"
+          "secondary": "Santiago Moyano"
         },
         {
           "type": "substitution",
@@ -17242,7 +17242,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moya",
+              "name": "Santiago Moyano",
               "jersey": "33",
               "position": "RB",
               "subbedIn": false,
@@ -17258,7 +17258,7 @@
             },
             {
               "id": "218440",
-              "name": "Matias Vera",
+              "name": "Matías Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -31275,7 +31275,7 @@
           "minute": "88'",
           "period": 2,
           "teamId": "2026",
-          "player": "André Silva",
+          "player": "André Oliveira",
           "secondary": "Iago"
         },
         {
@@ -31538,7 +31538,7 @@
             },
             {
               "id": "270578",
-              "name": "André Silva",
+              "name": "André Oliveira",
               "jersey": "17",
               "position": "SUB",
               "subbedIn": true,
@@ -31860,7 +31860,7 @@
           "minute": "90'+1'",
           "period": 2,
           "teamId": "2026",
-          "player": "André Silva",
+          "player": "André Oliveira",
           "secondary": "Artur"
         },
         {
@@ -32307,7 +32307,7 @@
             },
             {
               "id": "270578",
-              "name": "André Silva",
+              "name": "André Oliveira",
               "jersey": "17",
               "position": "SUB",
               "subbedIn": true,
@@ -34781,13 +34781,13 @@
                 "abbreviation": "IACC",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2975.png"
               },
-              "played": 13,
-              "won": 9,
+              "played": 14,
+              "won": 10,
               "drawn": 2,
               "lost": 2,
-              "goalsFor": 20,
+              "goalsFor": 21,
               "goalsAgainst": 10,
-              "points": 29
+              "points": 32
             },
             {
               "rank": 2,
@@ -34928,35 +34928,35 @@
             {
               "rank": 10,
               "team": {
-                "id": "8",
-                "name": "Estudiantes de La Plata",
-                "shortName": "Estudiantes",
-                "abbreviation": "EST",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
-              },
-              "played": 13,
-              "won": 4,
-              "drawn": 2,
-              "lost": 7,
-              "goalsFor": 16,
-              "goalsAgainst": 15,
-              "points": 14
-            },
-            {
-              "rank": 11,
-              "team": {
                 "id": "20",
                 "name": "Unión (Santa Fe)",
                 "shortName": "Unión (SF)",
                 "abbreviation": "USF",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20.png"
               },
-              "played": 13,
-              "won": 4,
+              "played": 14,
+              "won": 5,
               "drawn": 2,
               "lost": 7,
-              "goalsFor": 18,
-              "goalsAgainst": 22,
+              "goalsFor": 21,
+              "goalsAgainst": 23,
+              "points": 17
+            },
+            {
+              "rank": 11,
+              "team": {
+                "id": "8",
+                "name": "Estudiantes de La Plata",
+                "shortName": "Estudiantes",
+                "abbreviation": "EST",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
+              },
+              "played": 14,
+              "won": 4,
+              "drawn": 2,
+              "lost": 8,
+              "goalsFor": 17,
+              "goalsAgainst": 18,
               "points": 14
             },
             {
@@ -34985,12 +34985,12 @@
                 "abbreviation": "RIE",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17702.png"
               },
-              "played": 13,
+              "played": 14,
               "won": 2,
               "drawn": 6,
-              "lost": 5,
+              "lost": 6,
               "goalsFor": 10,
-              "goalsAgainst": 13,
+              "goalsAgainst": 14,
               "points": 12
             },
             {
