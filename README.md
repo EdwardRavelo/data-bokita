@@ -53,6 +53,15 @@ cambie o borre datos.
 - GitHub pausa los workflows programados tras 60 días sin actividad en el repo; si pasa,
   se reactiva desde la pestaña Actions.
 
+## Refresco automático
+
+Vercel regenera las páginas recién cuando alguien las visita, y a esa primera visita le
+muestra la versión anterior. Para que nadie vea datos viejos, el workflow
+`.github/workflows/refresh.yml` visita cada hora las páginas principales (inicio, partidos,
+estadísticas, tablas y noticias, también con el año en curso). Se puede correr a mano desde
+GitHub → Actions → "Refrescar páginas" → Run workflow. Si una página no responde 200, el
+workflow falla y GitHub avisa por mail.
+
 ## Comandos
 
 ```bash
