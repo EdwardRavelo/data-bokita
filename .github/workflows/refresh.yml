@@ -1,11 +1,11 @@
-# Visita las páginas principales cada hora para que Vercel las regenere (ISR).
+# Visita las páginas principales cada 12 horas para que Vercel las regenere (ISR).
 # Sin esto, la primera persona que entra después de un rato sin visitas ve la versión
 # vieja (Vercel la sirve "STALE" mientras regenera) y tiene que recargar.
 name: Refrescar páginas
 
 on:
   schedule:
-    - cron: "17 * * * *" # cada hora (minuto 17 para evitar el pico de las en punto)
+    - cron: "17 11,23 * * *" # 08:17 y 20:17 hora argentina
   workflow_dispatch:
 
 permissions: {}

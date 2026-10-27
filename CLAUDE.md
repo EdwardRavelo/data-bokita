@@ -33,7 +33,7 @@ npm run archive [-- 2024 2025]   # refresh data/archive/{year}.json from ESPN (d
   - Finished, archived matches take their detail from the archive; otherwise ESPN live.
 - `scripts/archive.ts` — writes the archive (finished matches + details + tables), keeping previously archived data when a single fetch fails and writing nothing if the schedule fails. Run daily by `.github/workflows/archive.yml`, which runs `npm test` before committing; that commit triggers a Vercel deploy.
 
-**Routing / caching**: season routes use optional catch-all `[[...temporada]]` (`/tablas`, `/tablas/2025`) with `yearParam()` and `seasonStaticParams()` from `lib/data.ts`. Caching is ISR via `export const revalidate` per page plus `fetch(..., { next: { revalidate } })` per request (finished match detail 1 day, live 60 s). `/partido/[id]` has empty `generateStaticParams` and renders on first request. Since ISR serves the stale page to the first visitor, `.github/workflows/refresh.yml` curls the main pages (hardcoded `SITE_URL`) hourly to trigger regeneration; add new top-level routes to its `paths` list.
+**Routing / caching**: season routes use optional catch-all `[[...temporada]]` (`/tablas`, `/tablas/2025`) with `yearParam()` and `seasonStaticParams()` from `lib/data.ts`. Caching is ISR via `export const revalidate` per page plus `fetch(..., { next: { revalidate } })` per request (finished match detail 1 day, live 60 s). `/partido/[id]` has empty `generateStaticParams` and renders on first request. Since ISR serves the stale page to the first visitor, `.github/workflows/refresh.yml` curls the main pages (hardcoded `SITE_URL`) every 12 h to trigger regeneration; add new top-level routes to its `paths` list.
 
 ## Fidelity rules (non-negotiable, see README)
 

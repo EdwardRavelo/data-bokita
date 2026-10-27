@@ -57,7 +57,7 @@ cambie o borre datos.
 
 Vercel regenera las páginas recién cuando alguien las visita, y a esa primera visita le
 muestra la versión anterior. Para que nadie vea datos viejos, el workflow
-`.github/workflows/refresh.yml` visita cada hora las páginas principales (inicio, partidos,
+`.github/workflows/refresh.yml` visita cada 12 horas (08:17 y 20:17, hora argentina) las páginas principales (inicio, partidos,
 estadísticas, tablas y noticias, también con el año en curso). Se puede correr a mano desde
 GitHub → Actions → "Refrescar páginas" → Run workflow. Si una página no responde 200, el
 workflow falla y GitHub avisa por mail.
