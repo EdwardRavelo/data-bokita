@@ -29,6 +29,11 @@ solo se muestra titular, fecha y link a la nota original.
 - Si los eventos de gol de un partido no suman el marcador, los goles faltantes quedan
   "sin autor" y el partido se señala como incompleto.
 - Las estadísticas de temporada excluyen amistosos.
+- Tabla anual: ESPN no la publica, así que se calcula sumando equipo por equipo las tablas de
+  las fases regulares de primera del año (Apertura + Clausura; en 2024, Copa de la Liga +
+  Liga), con los puntos tal cual los informa ESPN. Se ordena por puntos, diferencia de gol y
+  goles a favor; los equipos igualados en los tres comparten posición, porque los desempates
+  siguientes del reglamento no se pueden calcular con estos datos.
 - Llaves eliminatorias: se calcula el global de ida y vuelta y, si empata, se usa la tanda de
   penales informada. Si falta un partido o los penales, la llave queda "En curso" o
   "Sin datos": nunca se supone quién pasó.

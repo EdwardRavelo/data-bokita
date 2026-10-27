@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { GroupTable } from "@/components/GroupTable";
 import { ArchiveOnlyNotice, Card, SeasonPicker, Section, SourceBadge, TeamLogo } from "@/components/ui";
 import {
   availableYears,
@@ -12,60 +13,12 @@ import {
 } from "@/lib/data";
 import { sides } from "@/lib/domain/match";
 import { buildSeries, splitStage, tablePhase, type Series, type SeriesStatus } from "@/lib/domain/series";
-import { BOCA_ID, type StandingsGroup, type StandingsTable } from "@/lib/domain/types";
+import { BOCA_ID, type StandingsTable } from "@/lib/domain/types";
 import { formatDate } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Tablas" };
 export const revalidate = 600;
 export const generateStaticParams = seasonStaticParams;
-
-function GroupTable({ group }: { group: StandingsGroup }) {
-  return (
-    <div className="overflow-x-auto rounded-lg border border-navy-700">
-      <table className="w-full text-sm">
-        <thead className="bg-navy-800 text-xs uppercase text-slate-400">
-          <tr>
-            <th className="px-2 py-2 text-left font-medium" colSpan={2}>
-              {group.name}
-            </th>
-            {["PJ", "G", "E", "P", "GF", "GC", "DIF", "PTS"].map((h) => (
-              <th key={h} className="px-2 py-2 text-right font-medium">
-                {h}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-navy-700 bg-navy-900 tabular-nums">
-          {group.rows.map((r) => {
-            const diff = r.goalsFor - r.goalsAgainst;
-            return (
-              <tr key={r.team.id} className={r.team.id === BOCA_ID ? "bg-gold-500/15 font-semibold" : ""}>
-                <td className="w-8 px-2 py-1.5 text-right text-slate-400">{r.rank}</td>
-                <td className="px-2 py-1.5">
-                  <span className="flex items-center gap-2">
-                    <TeamLogo team={r.team} size={18} />
-                    <span className="truncate">{r.team.shortName}</span>
-                  </span>
-                </td>
-                <td className="px-2 py-1.5 text-right">{r.played}</td>
-                <td className="px-2 py-1.5 text-right">{r.won}</td>
-                <td className="px-2 py-1.5 text-right">{r.drawn}</td>
-                <td className="px-2 py-1.5 text-right">{r.lost}</td>
-                <td className="px-2 py-1.5 text-right">{r.goalsFor}</td>
-                <td className="px-2 py-1.5 text-right">{r.goalsAgainst}</td>
-                <td className="px-2 py-1.5 text-right">
-                  {diff > 0 ? "+" : ""}
-                  {diff}
-                </td>
-                <td className="px-2 py-1.5 text-right font-semibold">{r.points}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
-}
 
 function TableBlock({ table }: { table: StandingsTable }) {
   const bocaGroup = table.groups.find((g) => g.rows.some((r) => r.team.id === BOCA_ID));

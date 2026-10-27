@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { GroupTable } from "@/components/GroupTable";
 import {
   ArchiveOnlyNotice,
   Card,
@@ -12,12 +13,15 @@ import {
 } from "@/components/ui";
 import {
   availableYears,
+  currentYear,
   defaultStatsYear,
   getDetail,
   getSeason,
+  getTables,
   seasonStaticParams,
   yearParam,
 } from "@/lib/data";
+import { annualTable } from "@/lib/domain/annual";
 import { sides } from "@/lib/domain/match";
 import {
   averageStat,
@@ -28,7 +32,7 @@ import {
   summarizeSeason,
   type TeamRecord,
 } from "@/lib/domain/season";
-import type { MatchDetail } from "@/lib/domain/types";
+import { BOCA_ID, type MatchDetail } from "@/lib/domain/types";
 import { formatDate } from "@/lib/format";
 
 export const metadata: Metadata = { title: "Estadísticas" };
@@ -115,6 +119,10 @@ export default async function EstadisticasPage(props: PageProps<"/estadisticas/[
 
   const t = summary.total;
 
+  const tables = await getTables(season);
+  const annual = tables.ok ? annualTable(tables.data) : null;
+  const bocaAnnual = annual?.rows.find((r) => r.team.id === BOCA_ID);
+
   return (
     <>
       <h1 className="mb-4 font-display text-3xl font-bold uppercase">Temporada {year}</h1>
@@ -184,6 +192,22 @@ export default async function EstadisticasPage(props: PageProps<"/estadisticas/[
           ]}
         />
       </Section>
+
+      {annual && (
+        <Section title="Tabla anual">
+          {bocaAnnual && (
+            <p className="mb-3 text-sm">
+              Boca {year === currentYear() ? "está" : "terminó"} <span className="font-semibold text-gold-400">{bocaAnnual.rank}°</span> con{" "}
+              {bocaAnnual.points} puntos en {bocaAnnual.played} partidos.
+            </p>
+          )}
+          <GroupTable group={{ name: "Tabla anual", rows: annual.rows }} />
+          <p className="mt-2 text-xs text-slate-400">
+            Suma de {annual.phases.join(" + ")} (fases regulares, sin playoffs). Orden por puntos,
+            diferencia de gol y goles a favor; los equipos igualados en los tres comparten posición.
+          </p>
+        </Section>
+      )}
 
       <Section title="Goleadores">
         {scorers.scorers.length === 0 ? (
