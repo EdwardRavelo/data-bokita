@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-27T15:08:21.119Z",
+  "generatedAt": "2026-10-28T15:44:25.372Z",
   "source": "ESPN",
   "matches": [
     {
@@ -11499,7 +11499,7 @@
             },
             {
               "id": "206740",
-              "name": "Facundo Altamirano",
+              "name": "Facundo Altamira",
               "jersey": "25",
               "position": "SUB",
               "subbedIn": false,
@@ -17861,7 +17861,7 @@
             },
             {
               "id": "206740",
-              "name": "Facundo Altamirano",
+              "name": "Facundo Altamira",
               "jersey": "20",
               "position": "SUB",
               "subbedIn": false,
@@ -35058,13 +35058,13 @@
                 "abbreviation": "ARGJ",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png"
               },
-              "played": 13,
-              "won": 7,
+              "played": 14,
+              "won": 8,
               "drawn": 4,
               "lost": 2,
-              "goalsFor": 17,
+              "goalsFor": 18,
               "goalsAgainst": 11,
-              "points": 25
+              "points": 28
             },
             {
               "rank": 3,
@@ -35177,12 +35177,12 @@
                 "abbreviation": "RIV",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png"
               },
-              "played": 13,
+              "played": 14,
               "won": 5,
               "drawn": 4,
-              "lost": 4,
+              "lost": 5,
               "goalsFor": 17,
-              "goalsAgainst": 21,
+              "goalsAgainst": 22,
               "points": 19
             },
             {
