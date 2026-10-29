@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-28T15:44:25.372Z",
+  "generatedAt": "2026-10-29T15:51:45.811Z",
   "source": "ESPN",
   "matches": [
     {
@@ -10343,7 +10343,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastian Valdez",
+              "name": "Sebastián Valdez",
               "jersey": "36",
               "position": "CD-L",
               "subbedIn": false,
@@ -20255,7 +20255,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastian Valdez",
+              "name": "Sebastián Valdez",
               "jersey": "36",
               "position": "CD-R",
               "subbedIn": false,
