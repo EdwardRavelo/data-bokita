@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-29T15:51:45.811Z",
+  "generatedAt": "2026-10-30T15:33:25.989Z",
   "source": "ESPN",
   "matches": [
     {
@@ -10343,7 +10343,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastián Valdez",
+              "name": "Sebastian Valdez",
               "jersey": "36",
               "position": "CD-L",
               "subbedIn": false,
@@ -12867,7 +12867,7 @@
             },
             {
               "id": "403329",
-              "name": "Tomás Palacios",
+              "name": "Tomas Palacios",
               "jersey": "24",
               "position": "CD-L",
               "subbedIn": false,
@@ -13064,7 +13064,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Luca Regiardo",
-          "secondary": "Lautaro Ríos"
+          "secondary": "Lautaro Rios"
         },
         {
           "type": "substitution",
@@ -13152,7 +13152,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Blas Benedetto",
-          "secondary": "Lautaro Ríos"
+          "secondary": "Lautaro Rios"
         }
       ],
       "stats": [
@@ -13348,7 +13348,7 @@
             },
             {
               "id": "309409",
-              "name": "Lautaro Ríos",
+              "name": "Lautaro Rios",
               "jersey": "39",
               "position": "AM-L",
               "subbedIn": false,
@@ -17478,7 +17478,7 @@
           "minute": "55'",
           "period": 2,
           "teamId": "18",
-          "player": "Juan Álvarez",
+          "player": "Juan Ignacio Álvarez",
           "secondary": "Facundo Farías"
         },
         {
@@ -17789,7 +17789,7 @@
             },
             {
               "id": "228146",
-              "name": "Juan Álvarez",
+              "name": "Juan Ignacio Álvarez",
               "jersey": "22",
               "position": "SUB",
               "subbedIn": true,
@@ -20255,7 +20255,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastián Valdez",
+              "name": "Sebastian Valdez",
               "jersey": "36",
               "position": "CD-R",
               "subbedIn": false,
@@ -29524,14 +29524,6 @@
           "away": "15",
           "homeValue": 14,
           "awayValue": 15
-        },
-        {
-          "key": "interceptions",
-          "label": "Intercepciones",
-          "home": "0",
-          "away": "0",
-          "homeValue": 0,
-          "awayValue": 0
         }
       ],
       "lineups": [
