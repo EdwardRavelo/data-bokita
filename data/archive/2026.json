@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-30T15:33:25.989Z",
+  "generatedAt": "2026-10-31T15:03:28.401Z",
   "source": "ESPN",
   "matches": [
     {
@@ -14385,7 +14385,7 @@
           "minute": "84'",
           "period": 2,
           "teamId": "7764",
-          "player": "Pablo Ferreira",
+          "player": "Pablo Thomaz",
           "secondary": "Ivan Gomez"
         },
         {
@@ -14688,7 +14688,7 @@
             },
             {
               "id": "274441",
-              "name": "Pablo Ferreira",
+              "name": "Pablo Thomaz",
               "jersey": "26",
               "position": "SUB",
               "subbedIn": true,
@@ -35033,13 +35033,13 @@
                 "abbreviation": "ROS",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17.png"
               },
-              "played": 14,
-              "won": 8,
+              "played": 15,
+              "won": 9,
               "drawn": 4,
               "lost": 2,
-              "goalsFor": 22,
-              "goalsAgainst": 11,
-              "points": 28
+              "goalsFor": 24,
+              "goalsAgainst": 12,
+              "points": 31
             },
             {
               "rank": 2,
@@ -35067,13 +35067,13 @@
                 "abbreviation": "GLP",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9.png"
               },
-              "played": 14,
-              "won": 7,
+              "played": 15,
+              "won": 8,
               "drawn": 4,
               "lost": 3,
-              "goalsFor": 21,
-              "goalsAgainst": 18,
-              "points": 25
+              "goalsFor": 23,
+              "goalsAgainst": 19,
+              "points": 28
             },
             {
               "rank": 4,
@@ -35135,12 +35135,12 @@
                 "abbreviation": "SARM",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10158.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 6,
               "drawn": 3,
-              "lost": 5,
-              "goalsFor": 22,
-              "goalsAgainst": 21,
+              "lost": 6,
+              "goalsFor": 23,
+              "goalsAgainst": 23,
               "points": 21
             },
             {
@@ -35152,12 +35152,12 @@
                 "abbreviation": "HUR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 5,
               "drawn": 4,
-              "lost": 5,
+              "lost": 6,
               "goalsFor": 12,
-              "goalsAgainst": 14,
+              "goalsAgainst": 16,
               "points": 19
             },
             {
@@ -35197,6 +35197,40 @@
             {
               "rank": 11,
               "team": {
+                "id": "7767",
+                "name": "Tigre",
+                "shortName": "Tigre",
+                "abbreviation": "TIG",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7767.png"
+              },
+              "played": 15,
+              "won": 4,
+              "drawn": 4,
+              "lost": 7,
+              "goalsFor": 15,
+              "goalsAgainst": 16,
+              "points": 16
+            },
+            {
+              "rank": 12,
+              "team": {
+                "id": "15",
+                "name": "Racing Club",
+                "shortName": "Racing",
+                "abbreviation": "RAC",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png"
+              },
+              "played": 15,
+              "won": 4,
+              "drawn": 3,
+              "lost": 8,
+              "goalsFor": 16,
+              "goalsAgainst": 22,
+              "points": 15
+            },
+            {
+              "rank": 13,
+              "team": {
                 "id": "235",
                 "name": "Banfield",
                 "shortName": "Banfield",
@@ -35212,40 +35246,6 @@
               "points": 14
             },
             {
-              "rank": 12,
-              "team": {
-                "id": "7767",
-                "name": "Tigre",
-                "shortName": "Tigre",
-                "abbreviation": "TIG",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7767.png"
-              },
-              "played": 14,
-              "won": 3,
-              "drawn": 4,
-              "lost": 7,
-              "goalsFor": 13,
-              "goalsAgainst": 16,
-              "points": 13
-            },
-            {
-              "rank": 13,
-              "team": {
-                "id": "15",
-                "name": "Racing Club",
-                "shortName": "Racing",
-                "abbreviation": "RAC",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15.png"
-              },
-              "played": 14,
-              "won": 3,
-              "drawn": 3,
-              "lost": 8,
-              "goalsFor": 14,
-              "goalsAgainst": 21,
-              "points": 12
-            },
-            {
               "rank": 14,
               "team": {
                 "id": "9739",
@@ -35254,12 +35254,12 @@
                 "abbreviation": "ALDO",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9739.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 3,
               "drawn": 2,
-              "lost": 9,
-              "goalsFor": 15,
-              "goalsAgainst": 22,
+              "lost": 10,
+              "goalsFor": 16,
+              "goalsAgainst": 24,
               "points": 11
             },
             {
@@ -35271,12 +35271,12 @@
                 "abbreviation": "AAE",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19685.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 2,
               "drawn": 3,
-              "lost": 9,
-              "goalsFor": 9,
-              "goalsAgainst": 19,
+              "lost": 10,
+              "goalsFor": 10,
+              "goalsAgainst": 21,
               "points": 9
             }
           ]
