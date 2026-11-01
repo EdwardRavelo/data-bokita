@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-10-31T15:03:28.401Z",
+  "generatedAt": "2026-11-01T15:47:36.010Z",
   "source": "ESPN",
   "matches": [
     {
@@ -11499,7 +11499,7 @@
             },
             {
               "id": "206740",
-              "name": "Facundo Altamira",
+              "name": "Facundo Altamirano",
               "jersey": "25",
               "position": "SUB",
               "subbedIn": false,
@@ -17478,7 +17478,7 @@
           "minute": "55'",
           "period": 2,
           "teamId": "18",
-          "player": "Juan Ignacio Álvarez",
+          "player": "Juan Álvarez",
           "secondary": "Facundo Farías"
         },
         {
@@ -17789,7 +17789,7 @@
             },
             {
               "id": "228146",
-              "name": "Juan Ignacio Álvarez",
+              "name": "Juan Álvarez",
               "jersey": "22",
               "position": "SUB",
               "subbedIn": true,
@@ -17861,7 +17861,7 @@
             },
             {
               "id": "206740",
-              "name": "Facundo Altamira",
+              "name": "Facundo Altamirano",
               "jersey": "20",
               "position": "SUB",
               "subbedIn": false,
@@ -34773,13 +34773,13 @@
                 "abbreviation": "IACC",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2975.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 10,
-              "drawn": 2,
+              "drawn": 3,
               "lost": 2,
-              "goalsFor": 21,
-              "goalsAgainst": 10,
-              "points": 32
+              "goalsFor": 24,
+              "goalsAgainst": 13,
+              "points": 33
             },
             {
               "rank": 2,
@@ -34790,13 +34790,13 @@
                 "abbreviation": "VEL",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 7,
-              "drawn": 6,
+              "drawn": 7,
               "lost": 1,
-              "goalsFor": 23,
-              "goalsAgainst": 13,
-              "points": 27
+              "goalsFor": 25,
+              "goalsAgainst": 15,
+              "points": 28
             },
             {
               "rank": 3,
@@ -34909,13 +34909,13 @@
                 "abbreviation": "SLO",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 5,
-              "drawn": 3,
+              "drawn": 4,
               "lost": 6,
-              "goalsFor": 7,
-              "goalsAgainst": 12,
-              "points": 18
+              "goalsFor": 9,
+              "goalsAgainst": 14,
+              "points": 19
             },
             {
               "rank": 10,
@@ -34943,13 +34943,13 @@
                 "abbreviation": "EST",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 4,
-              "drawn": 2,
+              "drawn": 3,
               "lost": 8,
-              "goalsFor": 17,
-              "goalsAgainst": 18,
-              "points": 14
+              "goalsFor": 20,
+              "goalsAgainst": 21,
+              "points": 15
             },
             {
               "rank": 12,
@@ -34971,22 +34971,39 @@
             {
               "rank": 13,
               "team": {
+                "id": "19",
+                "name": "Talleres (Córdoba)",
+                "shortName": "Talleres",
+                "abbreviation": "TALL",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19.png"
+              },
+              "played": 15,
+              "won": 3,
+              "drawn": 3,
+              "lost": 9,
+              "goalsFor": 16,
+              "goalsAgainst": 22,
+              "points": 12
+            },
+            {
+              "rank": 14,
+              "team": {
                 "id": "17702",
                 "name": "Deportivo Riestra",
                 "shortName": "Riestra",
                 "abbreviation": "RIE",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17702.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 2,
               "drawn": 6,
-              "lost": 6,
+              "lost": 7,
               "goalsFor": 10,
-              "goalsAgainst": 14,
+              "goalsAgainst": 17,
               "points": 12
             },
             {
-              "rank": 14,
+              "rank": 15,
               "team": {
                 "id": "11989",
                 "name": "Central Córdoba (Santiago del Estero)",
@@ -35001,23 +35018,6 @@
               "goalsFor": 11,
               "goalsAgainst": 23,
               "points": 10
-            },
-            {
-              "rank": 15,
-              "team": {
-                "id": "19",
-                "name": "Talleres (Córdoba)",
-                "shortName": "Talleres",
-                "abbreviation": "TALL",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/19.png"
-              },
-              "played": 14,
-              "won": 2,
-              "drawn": 3,
-              "lost": 9,
-              "goalsFor": 13,
-              "goalsAgainst": 22,
-              "points": 9
             }
           ]
         },
