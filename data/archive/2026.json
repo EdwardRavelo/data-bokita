@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-02T19:12:44.789Z",
+  "generatedAt": "2026-11-03T16:51:12.320Z",
   "source": "ESPN",
   "matches": [
     {
@@ -35533,13 +35533,13 @@
                 "abbreviation": "DYJ",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/8950.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 8,
-              "drawn": 3,
+              "drawn": 4,
               "lost": 3,
-              "goalsFor": 20,
-              "goalsAgainst": 13,
-              "points": 27
+              "goalsFor": 21,
+              "goalsAgainst": 14,
+              "points": 28
             },
             {
               "rank": 5,
@@ -35601,13 +35601,13 @@
                 "abbreviation": "IND",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 5,
-              "drawn": 4,
+              "drawn": 5,
               "lost": 5,
-              "goalsFor": 12,
-              "goalsAgainst": 14,
-              "points": 19
+              "goalsFor": 13,
+              "goalsAgainst": 15,
+              "points": 20
             },
             {
               "rank": 9,
@@ -35646,6 +35646,23 @@
             {
               "rank": 11,
               "team": {
+                "id": "7764",
+                "name": "Platense",
+                "shortName": "Platense",
+                "abbreviation": "PLA",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7764.png"
+              },
+              "played": 15,
+              "won": 4,
+              "drawn": 5,
+              "lost": 6,
+              "goalsFor": 16,
+              "goalsAgainst": 20,
+              "points": 17
+            },
+            {
+              "rank": 12,
+              "team": {
                 "id": "8",
                 "name": "Estudiantes de La Plata",
                 "shortName": "Estudiantes",
@@ -35659,23 +35676,6 @@
               "goalsFor": 20,
               "goalsAgainst": 21,
               "points": 15
-            },
-            {
-              "rank": 12,
-              "team": {
-                "id": "7764",
-                "name": "Platense",
-                "shortName": "Platense",
-                "abbreviation": "PLA",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7764.png"
-              },
-              "played": 14,
-              "won": 3,
-              "drawn": 5,
-              "lost": 6,
-              "goalsFor": 14,
-              "goalsAgainst": 20,
-              "points": 14
             },
             {
               "rank": 13,
@@ -35720,12 +35720,12 @@
                 "abbreviation": "CTR",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/11989.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 2,
               "drawn": 4,
-              "lost": 8,
+              "lost": 9,
               "goalsFor": 11,
-              "goalsAgainst": 23,
+              "goalsAgainst": 25,
               "points": 10
             }
           ]
@@ -35759,13 +35759,13 @@
                 "abbreviation": "ARGJ",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3.png"
               },
-              "played": 14,
-              "won": 8,
+              "played": 15,
+              "won": 9,
               "drawn": 4,
               "lost": 2,
-              "goalsFor": 18,
-              "goalsAgainst": 11,
-              "points": 28
+              "goalsFor": 20,
+              "goalsAgainst": 12,
+              "points": 31
             },
             {
               "rank": 3,
@@ -35838,6 +35838,23 @@
             {
               "rank": 7,
               "team": {
+                "id": "9744",
+                "name": "Independiente Rivadavia",
+                "shortName": "Ind. Rivadavia",
+                "abbreviation": "RIV",
+                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png"
+              },
+              "played": 15,
+              "won": 6,
+              "drawn": 4,
+              "lost": 5,
+              "goalsFor": 20,
+              "goalsAgainst": 23,
+              "points": 22
+            },
+            {
+              "rank": 8,
+              "team": {
                 "id": "10158",
                 "name": "Sarmiento (Junín)",
                 "shortName": "Sarmiento (J)",
@@ -35853,7 +35870,7 @@
               "points": 21
             },
             {
-              "rank": 8,
+              "rank": 9,
               "team": {
                 "id": "10",
                 "name": "Huracán",
@@ -35870,23 +35887,6 @@
               "points": 19
             },
             {
-              "rank": 9,
-              "team": {
-                "id": "9744",
-                "name": "Independiente Rivadavia",
-                "shortName": "Ind. Rivadavia",
-                "abbreviation": "RIV",
-                "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png"
-              },
-              "played": 14,
-              "won": 5,
-              "drawn": 4,
-              "lost": 5,
-              "goalsFor": 17,
-              "goalsAgainst": 22,
-              "points": 19
-            },
-            {
               "rank": 10,
               "team": {
                 "id": "9785",
@@ -35895,12 +35895,12 @@
                 "abbreviation": "CAT",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9785.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 4,
               "drawn": 5,
-              "lost": 5,
-              "goalsFor": 13,
-              "goalsAgainst": 13,
+              "lost": 6,
+              "goalsFor": 14,
+              "goalsAgainst": 15,
               "points": 17
             },
             {
@@ -35946,12 +35946,12 @@
                 "abbreviation": "BAN",
                 "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/235.png"
               },
-              "played": 14,
+              "played": 15,
               "won": 3,
               "drawn": 5,
-              "lost": 6,
-              "goalsFor": 15,
-              "goalsAgainst": 20,
+              "lost": 7,
+              "goalsFor": 16,
+              "goalsAgainst": 23,
               "points": 14
             },
             {
