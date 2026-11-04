@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-03T16:51:12.320Z",
+  "generatedAt": "2026-11-04T16:51:47.824Z",
   "source": "ESPN",
   "matches": [
     {
@@ -6905,7 +6905,7 @@
           "minute": "45'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moyano",
+          "player": "Santiago Moya",
           "secondary": "Lucas González"
         },
         {
@@ -7232,7 +7232,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moyano",
+              "name": "Santiago Moya",
               "jersey": "33",
               "position": "SUB",
               "subbedIn": true,
@@ -13100,7 +13100,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Luca Regiardo",
-          "secondary": "Lautaro Rios"
+          "secondary": "Lautaro Ríos"
         },
         {
           "type": "substitution",
@@ -13188,7 +13188,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Blas Benedetto",
-          "secondary": "Lautaro Rios"
+          "secondary": "Lautaro Ríos"
         }
       ],
       "stats": [
@@ -13384,7 +13384,7 @@
             },
             {
               "id": "309409",
-              "name": "Lautaro Rios",
+              "name": "Lautaro Ríos",
               "jersey": "39",
               "position": "AM-L",
               "subbedIn": false,
@@ -16889,7 +16889,7 @@
           "minute": "62'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moyano",
+          "player": "Santiago Moya",
           "secondary": null
         },
         {
@@ -16906,7 +16906,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Martín Francisco Cuitiño",
-          "secondary": "Santiago Moyano"
+          "secondary": "Santiago Moya"
         },
         {
           "type": "substitution",
@@ -17278,7 +17278,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moyano",
+              "name": "Santiago Moya",
               "jersey": "33",
               "position": "RB",
               "subbedIn": false,
@@ -17514,7 +17514,7 @@
           "minute": "55'",
           "period": 2,
           "teamId": "18",
-          "player": "Juan Álvarez",
+          "player": "Juan Ignacio Álvarez",
           "secondary": "Facundo Farías"
         },
         {
@@ -17825,7 +17825,7 @@
             },
             {
               "id": "228146",
-              "name": "Juan Álvarez",
+              "name": "Juan Ignacio Álvarez",
               "jersey": "22",
               "position": "SUB",
               "subbedIn": true,
