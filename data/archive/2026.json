@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-16T19:17:02.052Z",
+  "generatedAt": "2026-11-17T18:10:44.008Z",
   "source": "ESPN",
   "matches": [
     {
@@ -10451,7 +10451,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastián Valdez",
+              "name": "Sebastian Valdez",
               "jersey": "36",
               "position": "CD-L",
               "subbedIn": false,
@@ -13172,7 +13172,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Luca Regiardo",
-          "secondary": "Lautaro Rios"
+          "secondary": "Lautaro Ríos"
         },
         {
           "type": "substitution",
@@ -13260,7 +13260,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Blas Benedetto",
-          "secondary": "Lautaro Rios"
+          "secondary": "Lautaro Ríos"
         }
       ],
       "stats": [
@@ -13456,7 +13456,7 @@
             },
             {
               "id": "309409",
-              "name": "Lautaro Rios",
+              "name": "Lautaro Ríos",
               "jersey": "39",
               "position": "AM-L",
               "subbedIn": false,
@@ -20363,7 +20363,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastián Valdez",
+              "name": "Sebastian Valdez",
               "jersey": "36",
               "position": "CD-R",
               "subbedIn": false,
