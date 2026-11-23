@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-22T16:54:53.994Z",
+  "generatedAt": "2026-11-23T20:53:40.909Z",
   "source": "ESPN",
   "matches": [
     {
@@ -6809,7 +6809,7 @@
             },
             {
               "id": "254176",
-              "name": "Imanol González",
+              "name": "Imanol Gonzalez",
               "jersey": "6",
               "position": "CD-L",
               "subbedIn": false,
