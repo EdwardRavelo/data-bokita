@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-23T20:53:40.909Z",
+  "generatedAt": "2026-11-24T19:57:33.322Z",
   "source": "ESPN",
   "matches": [
     {
@@ -6809,7 +6809,7 @@
             },
             {
               "id": "254176",
-              "name": "Imanol Gonzalez",
+              "name": "Imanol González",
               "jersey": "6",
               "position": "CD-L",
               "subbedIn": false,
@@ -7094,7 +7094,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Lucas Varaldo",
-          "secondary": "Matías Vera"
+          "secondary": "Matias Vera"
         },
         {
           "type": "yellowCard",
@@ -7242,7 +7242,7 @@
             },
             {
               "id": "218440",
-              "name": "Matías Vera",
+              "name": "Matias Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -10487,7 +10487,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastian Valdez",
+              "name": "Sebastián Valdez",
               "jersey": "36",
               "position": "CD-L",
               "subbedIn": false,
@@ -17402,7 +17402,7 @@
             },
             {
               "id": "218440",
-              "name": "Matías Vera",
+              "name": "Matias Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -20399,7 +20399,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastian Valdez",
+              "name": "Sebastián Valdez",
               "jersey": "36",
               "position": "CD-R",
               "subbedIn": false,
