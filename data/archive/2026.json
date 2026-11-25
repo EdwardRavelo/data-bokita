@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-24T19:57:33.322Z",
+  "generatedAt": "2026-11-25T18:59:12.952Z",
   "source": "ESPN",
   "matches": [
     {
@@ -5739,7 +5739,7 @@
           "minute": "61'",
           "period": 2,
           "teamId": "12",
-          "player": "Matías Sepúlveda",
+          "player": "Matias Sepulveda",
           "secondary": "Eduardo Salvio"
         },
         {
@@ -6034,7 +6034,7 @@
             },
             {
               "id": "179904",
-              "name": "Matías Sepúlveda",
+              "name": "Matias Sepulveda",
               "jersey": "16",
               "position": "SUB",
               "subbedIn": true,
@@ -10106,7 +10106,7 @@
           "minute": "83'",
           "period": 2,
           "teamId": "11",
-          "player": "Facundo Valdéz",
+          "player": "Facundo Valdez",
           "secondary": "Maximiliano Gutiérrez"
         },
         {
@@ -10537,7 +10537,7 @@
           "bench": [
             {
               "id": "401383",
-              "name": "Facundo Valdéz",
+              "name": "Facundo Valdez",
               "jersey": "43",
               "position": "SUB",
               "subbedIn": true,
@@ -15739,7 +15739,7 @@
           "minute": "69'",
           "period": 2,
           "teamId": "12",
-          "player": "Matías Sepúlveda",
+          "player": "Matias Sepulveda",
           "secondary": "Dylan Aquino"
         },
         {
@@ -16186,7 +16186,7 @@
           "bench": [
             {
               "id": "179904",
-              "name": "Matías Sepúlveda",
+              "name": "Matias Sepulveda",
               "jersey": "16",
               "position": "SUB",
               "subbedIn": true,
@@ -17622,7 +17622,7 @@
           "minute": "55'",
           "period": 2,
           "teamId": "18",
-          "player": "Juan Álvarez",
+          "player": "Juan Ignacio Álvarez",
           "secondary": "Facundo Farías"
         },
         {
@@ -17933,7 +17933,7 @@
             },
             {
               "id": "228146",
-              "name": "Juan Álvarez",
+              "name": "Juan Ignacio Álvarez",
               "jersey": "22",
               "position": "SUB",
               "subbedIn": true,
