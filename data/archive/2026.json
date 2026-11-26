@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-25T18:59:12.952Z",
+  "generatedAt": "2026-11-26T18:50:32.606Z",
   "source": "ESPN",
   "matches": [
     {
@@ -2017,6 +2017,42 @@
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png"
         },
         "score": 2,
+        "shootout": null
+      }
+    },
+    {
+      "id": "401933757",
+      "date": "2026-11-26T00:00Z",
+      "timeConfirmed": true,
+      "status": "finished",
+      "clock": null,
+      "decidedBy": "regular",
+      "competition": {
+        "slug": "arg.1",
+        "name": "Liga Profesional",
+        "stage": "Clausura - Octavos de final"
+      },
+      "venue": "Alberto José Armando (La Bombonera)",
+      "home": {
+        "team": {
+          "id": "5",
+          "name": "Boca Juniors",
+          "shortName": "Boca",
+          "abbreviation": "CABJ",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5.png"
+        },
+        "score": 2,
+        "shootout": null
+      },
+      "away": {
+        "team": {
+          "id": "9744",
+          "name": "Independiente Rivadavia",
+          "shortName": "Ind. Rivadavia",
+          "abbreviation": "RIV",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9744.png"
+        },
+        "score": 0,
         "shootout": null
       }
     }
@@ -5739,7 +5775,7 @@
           "minute": "61'",
           "period": 2,
           "teamId": "12",
-          "player": "Matias Sepulveda",
+          "player": "Matías Sepúlveda",
           "secondary": "Eduardo Salvio"
         },
         {
@@ -6034,7 +6070,7 @@
             },
             {
               "id": "179904",
-              "name": "Matias Sepulveda",
+              "name": "Matías Sepúlveda",
               "jersey": "16",
               "position": "SUB",
               "subbedIn": true,
@@ -6809,7 +6845,7 @@
             },
             {
               "id": "254176",
-              "name": "Imanol González",
+              "name": "Imanol Gonzalez",
               "jersey": "6",
               "position": "CD-L",
               "subbedIn": false,
@@ -7013,7 +7049,7 @@
           "minute": "45'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moya",
+          "player": "Santiago Moyano",
           "secondary": "Lucas González"
         },
         {
@@ -7094,7 +7130,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Lucas Varaldo",
-          "secondary": "Matias Vera"
+          "secondary": "Matías Vera"
         },
         {
           "type": "yellowCard",
@@ -7242,7 +7278,7 @@
             },
             {
               "id": "218440",
-              "name": "Matias Vera",
+              "name": "Matías Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -7340,7 +7376,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moya",
+              "name": "Santiago Moyano",
               "jersey": "33",
               "position": "SUB",
               "subbedIn": true,
@@ -8239,7 +8275,7 @@
           "minute": "41'",
           "period": 1,
           "teamId": "20",
-          "player": "Julián Palacio",
+          "player": "Julián Palacios",
           "secondary": "Rafael Profini"
         },
         {
@@ -8263,7 +8299,7 @@
           "minute": "58'",
           "period": 2,
           "teamId": "20",
-          "player": "Julián Palacio",
+          "player": "Julián Palacios",
           "secondary": null
         },
         {
@@ -8304,7 +8340,7 @@
           "period": 2,
           "teamId": "20",
           "player": "Santiago Grella",
-          "secondary": "Julián Palacio"
+          "secondary": "Julián Palacios"
         },
         {
           "type": "substitution",
@@ -8476,7 +8512,7 @@
             },
             {
               "id": "298859",
-              "name": "Julián Palacio",
+              "name": "Julián Palacios",
               "jersey": "20",
               "position": "RM",
               "subbedIn": false,
@@ -10106,7 +10142,7 @@
           "minute": "83'",
           "period": 2,
           "teamId": "11",
-          "player": "Facundo Valdez",
+          "player": "Facundo Valdéz",
           "secondary": "Maximiliano Gutiérrez"
         },
         {
@@ -10487,7 +10523,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastián Valdez",
+              "name": "Sebastian Valdez",
               "jersey": "36",
               "position": "CD-L",
               "subbedIn": false,
@@ -10537,7 +10573,7 @@
           "bench": [
             {
               "id": "401383",
-              "name": "Facundo Valdez",
+              "name": "Facundo Valdéz",
               "jersey": "43",
               "position": "SUB",
               "subbedIn": true,
@@ -11643,7 +11679,7 @@
             },
             {
               "id": "206740",
-              "name": "Facundo Altamirano",
+              "name": "Facundo Altamira",
               "jersey": "25",
               "position": "SUB",
               "subbedIn": false,
@@ -13208,7 +13244,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Luca Regiardo",
-          "secondary": "Lautaro Ríos"
+          "secondary": "Lautaro Rios"
         },
         {
           "type": "substitution",
@@ -13296,7 +13332,7 @@
           "period": 2,
           "teamId": "14",
           "player": "Blas Benedetto",
-          "secondary": "Lautaro Ríos"
+          "secondary": "Lautaro Rios"
         }
       ],
       "stats": [
@@ -13492,7 +13528,7 @@
             },
             {
               "id": "309409",
-              "name": "Lautaro Ríos",
+              "name": "Lautaro Rios",
               "jersey": "39",
               "position": "AM-L",
               "subbedIn": false,
@@ -14529,7 +14565,7 @@
           "minute": "84'",
           "period": 2,
           "teamId": "7764",
-          "player": "Pablo Thomaz",
+          "player": "Pablo Ferreira",
           "secondary": "Ivan Gomez"
         },
         {
@@ -14832,7 +14868,7 @@
             },
             {
               "id": "274441",
-              "name": "Pablo Thomaz",
+              "name": "Pablo Ferreira",
               "jersey": "26",
               "position": "SUB",
               "subbedIn": true,
@@ -15739,7 +15775,7 @@
           "minute": "69'",
           "period": 2,
           "teamId": "12",
-          "player": "Matias Sepulveda",
+          "player": "Matías Sepúlveda",
           "secondary": "Dylan Aquino"
         },
         {
@@ -16186,7 +16222,7 @@
           "bench": [
             {
               "id": "179904",
-              "name": "Matias Sepulveda",
+              "name": "Matías Sepúlveda",
               "jersey": "16",
               "position": "SUB",
               "subbedIn": true,
@@ -16997,7 +17033,7 @@
           "minute": "62'",
           "period": 2,
           "teamId": "11989",
-          "player": "Santiago Moya",
+          "player": "Santiago Moyano",
           "secondary": null
         },
         {
@@ -17014,7 +17050,7 @@
           "period": 2,
           "teamId": "11989",
           "player": "Martín Francisco Cuitiño",
-          "secondary": "Santiago Moya"
+          "secondary": "Santiago Moyano"
         },
         {
           "type": "substitution",
@@ -17386,7 +17422,7 @@
             },
             {
               "id": "257734",
-              "name": "Santiago Moya",
+              "name": "Santiago Moyano",
               "jersey": "33",
               "position": "RB",
               "subbedIn": false,
@@ -17402,7 +17438,7 @@
             },
             {
               "id": "218440",
-              "name": "Matias Vera",
+              "name": "Matías Vera",
               "jersey": "22",
               "position": "CM-R",
               "subbedIn": false,
@@ -18005,7 +18041,7 @@
             },
             {
               "id": "206740",
-              "name": "Facundo Altamirano",
+              "name": "Facundo Altamira",
               "jersey": "20",
               "position": "SUB",
               "subbedIn": false,
@@ -18320,7 +18356,7 @@
           "period": 2,
           "teamId": "20",
           "player": "Eric Ramírez",
-          "secondary": "Julián Palacio"
+          "secondary": "Julián Palacios"
         },
         {
           "type": "substitution",
@@ -18716,7 +18752,7 @@
             },
             {
               "id": "298859",
-              "name": "Julián Palacio",
+              "name": "Julián Palacios",
               "jersey": "20",
               "position": "RM",
               "subbedIn": false,
@@ -20399,7 +20435,7 @@
             },
             {
               "id": "236681",
-              "name": "Sebastián Valdez",
+              "name": "Sebastian Valdez",
               "jersey": "36",
               "position": "CD-R",
               "subbedIn": false,
@@ -32701,7 +32737,7 @@
           "minute": "88'",
           "period": 2,
           "teamId": "2026",
-          "player": "André Oliveira",
+          "player": "André Silva",
           "secondary": "Iago"
         },
         {
@@ -32964,7 +33000,7 @@
             },
             {
               "id": "270578",
-              "name": "André Oliveira",
+              "name": "André Silva",
               "jersey": "17",
               "position": "SUB",
               "subbedIn": true,
@@ -33286,7 +33322,7 @@
           "minute": "90'+1'",
           "period": 2,
           "teamId": "2026",
-          "player": "André Oliveira",
+          "player": "André Silva",
           "secondary": "Artur"
         },
         {
@@ -33733,7 +33769,7 @@
             },
             {
               "id": "270578",
-              "name": "André Oliveira",
+              "name": "André Silva",
               "jersey": "17",
               "position": "SUB",
               "subbedIn": true,
@@ -35993,7 +36029,7 @@
           "bench": [
             {
               "id": "361299",
-              "name": "Tomás Pérez",
+              "name": "Tomas Perez",
               "jersey": "25",
               "position": "SUB",
               "subbedIn": false,
@@ -36894,6 +36930,631 @@
               "jersey": "26",
               "position": "SUB",
               "subbedIn": false,
+              "subbedOut": false
+            }
+          ]
+        }
+      ],
+      "eventsMatchScore": true
+    },
+    "401933757": {
+      "events": [
+        {
+          "type": "penaltyGoal",
+          "minute": "18'",
+          "period": 1,
+          "teamId": "5",
+          "player": "Leandro Paredes",
+          "secondary": null
+        },
+        {
+          "type": "yellowCard",
+          "minute": "30'",
+          "period": 1,
+          "teamId": "9744",
+          "player": "Alex Arce",
+          "secondary": null
+        },
+        {
+          "type": "yellowCard",
+          "minute": "36'",
+          "period": 1,
+          "teamId": "5",
+          "player": "Leandro Lozano",
+          "secondary": null
+        },
+        {
+          "type": "substitution",
+          "minute": "37'",
+          "period": 1,
+          "teamId": "5",
+          "player": "William Alarcón",
+          "secondary": "Milton Delgado"
+        },
+        {
+          "type": "substitution",
+          "minute": "49'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Alan Velasco",
+          "secondary": "William Alarcón"
+        },
+        {
+          "type": "goal",
+          "minute": "53'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Miguel Merentiel",
+          "secondary": "Leandro Lozano"
+        },
+        {
+          "type": "yellowCard",
+          "minute": "54'",
+          "period": 2,
+          "teamId": "9744",
+          "player": "Sheyko Studer",
+          "secondary": null
+        },
+        {
+          "type": "substitution",
+          "minute": "56'",
+          "period": 2,
+          "teamId": "9744",
+          "player": "Fabrizio Sartori Prieto",
+          "secondary": "Rodrigo Atencio"
+        },
+        {
+          "type": "substitution",
+          "minute": "56'",
+          "period": 2,
+          "teamId": "9744",
+          "player": "Matías Reali",
+          "secondary": "Luis Sequeira"
+        },
+        {
+          "type": "substitution",
+          "minute": "72'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Adam Bareiro",
+          "secondary": "Miguel Merentiel"
+        },
+        {
+          "type": "substitution",
+          "minute": "72'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Rodrigo Battaglia",
+          "secondary": "Tomás Aranda"
+        },
+        {
+          "type": "substitution",
+          "minute": "72'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Leonel Flores",
+          "secondary": "Sebastián Villa"
+        },
+        {
+          "type": "yellowCard",
+          "minute": "72'",
+          "period": 2,
+          "teamId": "9744",
+          "player": "Leonard Costa",
+          "secondary": null
+        },
+        {
+          "type": "substitution",
+          "minute": "73'",
+          "period": 2,
+          "teamId": "9744",
+          "player": "Tomás Bottari",
+          "secondary": "Leonard Costa"
+        },
+        {
+          "type": "substitution",
+          "minute": "73'",
+          "period": 2,
+          "teamId": "9744",
+          "player": "Leonel Bucca",
+          "secondary": "Gonzalo Rios"
+        },
+        {
+          "type": "yellowCard",
+          "minute": "87'",
+          "period": 2,
+          "teamId": "5",
+          "player": "Leandro Paredes",
+          "secondary": null
+        },
+        {
+          "type": "yellowCard",
+          "minute": "90'+2'",
+          "period": 2,
+          "teamId": "9744",
+          "player": "Leonel Bucca",
+          "secondary": null
+        }
+      ],
+      "stats": [
+        {
+          "key": "possessionPct",
+          "label": "Posesión",
+          "home": "64.7%",
+          "away": "35.3%",
+          "homeValue": 64.7,
+          "awayValue": 35.3
+        },
+        {
+          "key": "totalShots",
+          "label": "Remates",
+          "home": "21",
+          "away": "11",
+          "homeValue": 21,
+          "awayValue": 11
+        },
+        {
+          "key": "shotsOnTarget",
+          "label": "Remates al arco",
+          "home": "9",
+          "away": "2",
+          "homeValue": 9,
+          "awayValue": 2
+        },
+        {
+          "key": "saves",
+          "label": "Atajadas",
+          "home": "2",
+          "away": "7",
+          "homeValue": 2,
+          "awayValue": 7
+        },
+        {
+          "key": "wonCorners",
+          "label": "Córners",
+          "home": "11",
+          "away": "1",
+          "homeValue": 11,
+          "awayValue": 1
+        },
+        {
+          "key": "offsides",
+          "label": "Offsides",
+          "home": "0",
+          "away": "0",
+          "homeValue": 0,
+          "awayValue": 0
+        },
+        {
+          "key": "foulsCommitted",
+          "label": "Faltas",
+          "home": "9",
+          "away": "13",
+          "homeValue": 9,
+          "awayValue": 13
+        },
+        {
+          "key": "yellowCards",
+          "label": "Amarillas",
+          "home": "2",
+          "away": "4",
+          "homeValue": 2,
+          "awayValue": 4
+        },
+        {
+          "key": "redCards",
+          "label": "Rojas",
+          "home": "0",
+          "away": "0",
+          "homeValue": 0,
+          "awayValue": 0
+        },
+        {
+          "key": "totalPasses",
+          "label": "Pases",
+          "home": "575",
+          "away": "308",
+          "homeValue": 575,
+          "awayValue": 308
+        },
+        {
+          "key": "accuratePasses",
+          "label": "Pases precisos",
+          "home": "500",
+          "away": "248",
+          "homeValue": 500,
+          "awayValue": 248
+        },
+        {
+          "key": "totalTackles",
+          "label": "Quites",
+          "home": "18",
+          "away": "10",
+          "homeValue": 18,
+          "awayValue": 10
+        },
+        {
+          "key": "interceptions",
+          "label": "Intercepciones",
+          "home": "6",
+          "away": "10",
+          "homeValue": 6,
+          "awayValue": 10
+        }
+      ],
+      "lineups": [
+        {
+          "teamId": "5",
+          "formation": "4-3-3",
+          "starters": [
+            {
+              "id": "166323",
+              "name": "Álvaro Montero",
+              "jersey": "1",
+              "position": "G",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "338991",
+              "name": "Leandro Lozano",
+              "jersey": "17",
+              "position": "RB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "290542",
+              "name": "Lautaro Blanco",
+              "jersey": "3",
+              "position": "LB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "153115",
+              "name": "Leandro Paredes",
+              "jersey": "5",
+              "position": "CM",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "341457",
+              "name": "Lautaro Di Lollo",
+              "jersey": "2",
+              "position": "CD-R",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "400357",
+              "name": "Facundo Herrera",
+              "jersey": "42",
+              "position": "CD-L",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "256199",
+              "name": "Tomás Belmonte",
+              "jersey": "8",
+              "position": "RM",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "382978",
+              "name": "Milton Delgado",
+              "jersey": "18",
+              "position": "LM",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "260812",
+              "name": "Miguel Merentiel",
+              "jersey": "16",
+              "position": "F",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "400359",
+              "name": "Tomás Aranda",
+              "jersey": "10",
+              "position": "RF",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "141790",
+              "name": "Sebastián Villa",
+              "jersey": "22",
+              "position": "LF",
+              "subbedIn": false,
+              "subbedOut": true
+            }
+          ],
+          "bench": [
+            {
+              "id": "171771",
+              "name": "Enner Valencia",
+              "jersey": "13",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "202025",
+              "name": "Carlos Palacios",
+              "jersey": "7",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "335580",
+              "name": "Leandro Brey",
+              "jersey": "12",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "259166",
+              "name": "Malcom Braida",
+              "jersey": "27",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "400360",
+              "name": "Leonel Flores",
+              "jersey": "19",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "189952",
+              "name": "Jorge Figal",
+              "jersey": "4",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "233734",
+              "name": "Santiago Ascacibar",
+              "jersey": "25",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "286902",
+              "name": "Ayrton Costa",
+              "jersey": "32",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "274298",
+              "name": "William Alarcón",
+              "jersey": "15",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": true
+            },
+            {
+              "id": "252629",
+              "name": "Adam Bareiro",
+              "jersey": "28",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "286516",
+              "name": "Alan Velasco",
+              "jersey": "20",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "152706",
+              "name": "Rodrigo Battaglia",
+              "jersey": "6",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            }
+          ]
+        },
+        {
+          "teamId": "9744",
+          "formation": "4-2-3-1",
+          "starters": [
+            {
+              "id": "301990",
+              "name": "Emmanuel Gómez Riga",
+              "jersey": "21",
+              "position": "G",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "207235",
+              "name": "Ezequiel Bonifacio",
+              "jersey": "36",
+              "position": "RB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "236006",
+              "name": "Juan Manuel Elordi",
+              "jersey": "3",
+              "position": "LB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "315719",
+              "name": "Gonzalo Rios",
+              "jersey": "11",
+              "position": "LM",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "252053",
+              "name": "Ivan Villalba",
+              "jersey": "40",
+              "position": "CD-R",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "301978",
+              "name": "Sheyko Studer",
+              "jersey": "42",
+              "position": "CD-L",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "338874",
+              "name": "Rodrigo Atencio",
+              "jersey": "19",
+              "position": "AM-R",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "358754",
+              "name": "Leonard Costa",
+              "jersey": "2",
+              "position": "RM",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "257754",
+              "name": "Alex Arce",
+              "jersey": "9",
+              "position": "F",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "213509",
+              "name": "Luis Sequeira",
+              "jersey": "77",
+              "position": "AM",
+              "subbedIn": false,
+              "subbedOut": true
+            },
+            {
+              "id": "185434",
+              "name": "Matías Fernández",
+              "jersey": "10",
+              "position": "AM-L",
+              "subbedIn": false,
+              "subbedOut": false
+            }
+          ],
+          "bench": [
+            {
+              "id": "336665",
+              "name": "Alejo Osella",
+              "jersey": "13",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "290741",
+              "name": "Diego Crego",
+              "jersey": "27",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "309424",
+              "name": "Stefano Moreyra",
+              "jersey": "34",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "341790",
+              "name": "Luis Díaz",
+              "jersey": "23",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "276021",
+              "name": "Alex Vigo",
+              "jersey": "28",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "414351",
+              "name": "Nicolás Bolcato",
+              "jersey": "30",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "335510",
+              "name": "Matías Reali",
+              "jersey": "80",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "302053",
+              "name": "Tomás Bottari",
+              "jersey": "5",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "205224",
+              "name": "Victorio Ramis",
+              "jersey": "7",
+              "position": "SUB",
+              "subbedIn": false,
+              "subbedOut": false
+            },
+            {
+              "id": "309496",
+              "name": "Fabrizio Sartori Prieto",
+              "jersey": "43",
+              "position": "SUB",
+              "subbedIn": true,
+              "subbedOut": false
+            },
+            {
+              "id": "290595",
+              "name": "Leonel Bucca",
+              "jersey": "8",
+              "position": "SUB",
+              "subbedIn": true,
               "subbedOut": false
             }
           ]
