@@ -1,7 +1,7 @@
 {
   "version": 1,
   "year": 2026,
-  "generatedAt": "2026-11-26T18:50:32.606Z",
+  "generatedAt": "2026-11-27T18:42:32.221Z",
   "source": "ESPN",
   "matches": [
     {
@@ -36029,7 +36029,7 @@
           "bench": [
             {
               "id": "361299",
-              "name": "Tomas Perez",
+              "name": "Tomás Pérez",
               "jersey": "25",
               "position": "SUB",
               "subbedIn": false,
